@@ -11,3 +11,97 @@
     padding-top: 180px;
   }
 }
+
+.pageRecruit__headingLv2 {
+  padding-top: 40px;
+}
+
+.pageRecruit__jobTable {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  color: s.$colorWhite;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+.pageRecruit__jobRow {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.pageRecruit__jobHeader {
+  font-weight: normal;
+  text-align: left;
+  width: 100px;
+}
+
+.pageRecruit__jobText {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.pageRecruit__workText {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-top: 20px;
+  color: s.$colorWhite;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
+.pageRecruit__workItem {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.pageRecruit__contactBtn {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  padding: 8px 80px;
+  border: 1px solid s.$colorWhite;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.pageRecruit__contactBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: s.$colorYellow;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform ease 0.3s;
+}
+
+.pageRecruit__contactBtn:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+
+.pageRecruit__contactLink {
+  color: s.$colorWhite;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+
+  transition: ease 0.3s;
+}
+
+.pageRecruit__contactBtn:hover .pageRecruit__contactLink {
+  color: s.$colorBlack;
+}

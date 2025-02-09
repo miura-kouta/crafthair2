@@ -76,6 +76,20 @@
                 </a>
             </li>
             <li class="header__listItem">
+                <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__listLink <?php if (is_page('inquiry')) {
+                                                                                                echo 'header__listLink--inquiry';
+                                                                                            } ?>">
+                    STAFF
+                </a>
+            </li>
+            <li class="header__listItem">
+                <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__listLink <?php if (is_page('inquiry')) {
+                                                                                                echo 'header__listLink--inquiry';
+                                                                                            } ?>">
+                    INFO
+                </a>
+            </li>
+            <li class="header__listItem">
                 <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="header__listLink <?php if (is_page('inquiry')) {
                                                                                                     echo 'header__listLink--inquiry';
                                                                                                 } ?>">
@@ -83,9 +97,9 @@
                 </a>
             </li>
             <li class="header__listItem">
-                <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__listLink <?php if (is_page('inquiry')) {
-                                                                                                echo 'header__listLink--inquiry';
-                                                                                            } ?>">
+                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="header__listLink <?php if (is_page('inquiry')) {
+                                                                                                    echo 'header__listLink--inquiry';
+                                                                                                } ?>">
                     CONTACT
                 </a>
             </li>
@@ -121,6 +135,20 @@
                     </a>
                 </li>
                 <li class="header__hamburgerItem">
+                    <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__hamburgerLink <?php if (is_page('faq')) {
+                                                                                                        echo 'header__listLink--faq';
+                                                                                                    } ?>">
+                        INFO
+                    </a>
+                </li>
+                <li class="header__hamburgerItem">
+                    <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__hamburgerLink <?php if (is_page('faq')) {
+                                                                                                        echo 'header__listLink--faq';
+                                                                                                    } ?>">
+                        STAFF
+                    </a>
+                </li>
+                <li class="header__hamburgerItem">
                     <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="header__hamburgerLink <?php if (is_page('inquiry')) {
                                                                                                             echo 'header__listLink--inquiry';
                                                                                                         } ?>">
@@ -128,9 +156,9 @@
                     </a>
                 </li>
                 <li class="header__hamburgerItem">
-                    <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__hamburgerLink <?php if (is_page('inquiry')) {
-                                                                                                        echo 'header__listLink--inquiry';
-                                                                                                    } ?>">
+                    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="header__hamburgerLink <?php if (is_page('inquiry')) {
+                                                                                                            echo 'header__listLink--inquiry';
+                                                                                                        } ?>">
                         CONTACT
                     </a>
                 </li>
