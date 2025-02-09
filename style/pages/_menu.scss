@@ -1,0 +1,69 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| menu(page-menu.php)
+*******************************/
+.menu {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.menu__tableContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  color: s.$colorWhite;
+  white-space: nowrap;
+
+  @include s.mq(tab) {
+    display: block;
+  }
+}
+
+.menu__tableInner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu__tableHeadCell {
+  padding-left: 88px;
+  padding-bottom: 20px;
+  font-family: s.$fontFamily;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 1.188;
+  letter-spacing: 0.05em;
+  color: s.$colorBlack;
+  text-shadow: -2px -2px 0 s.$colorWhite, 2px -2px 0 s.$colorWhite,
+    -2px 2px 0 s.$colorWhite, 2px 2px 0 s.$colorWhite;
+  text-align: center;
+
+  @include s.mq(tab) {
+    padding-top: 20px;
+  }
+}
+
+.menu__tableInner:first-child .menu__tableHeadCell {
+  @include s.mq(tab) {
+    padding-top: 0;
+  }
+}
+
+.menu__tableBody {
+  font-size: 2rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+}
+
+.menu__tableHeader {
+  width: 75%;
+}
+
+.menu__tableText {
+  padding-top: 20px;
+}

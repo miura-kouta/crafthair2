@@ -1,0 +1,67 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| style(archive-style.php)
+*******************************/
+.style {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include s.mq(tab) {
+    padding-top: 180px;
+  }
+}
+
+.hairStyleCatalog__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+  padding-top: 40px;
+
+  @include s.mq(tab) {
+    gap: 20px;
+  }
+}
+
+.hairStyleCatalog__card {
+  overflow: hidden;
+
+  @include s.mq(tab) {
+    margin-top: 20px;
+  }
+}
+
+.attachment-medium {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  transition: 0.3s all;
+}
+
+.attachment-medium:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.pagination {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.page-numbers {
+  font-size: 2rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: s.$colorBlue;
+  transition: 0.3s all;
+}
+
+.page-numbers:hover {
+  color: s.$colorYellow;
+}
+
+.current {
+  color: s.$colorWhite;
+}
+
+.current:hover {
+  color: s.$colorWhite;
+}

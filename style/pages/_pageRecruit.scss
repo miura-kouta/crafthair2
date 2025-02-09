@@ -1,0 +1,13 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| pageRecruit(page-recruit.php)
+*******************************/
+.pageRecruit {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include s.mq(tab) {
+    padding-top: 180px;
+  }
+}

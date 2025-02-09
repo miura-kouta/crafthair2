@@ -27,3 +27,12 @@
 @use "pages/top/staff";
 @use "pages/top/salonInfo";
 @use "pages/top/recruit";
+
+//　各ページ用CSS
+@use "pages/_archiveStyle";
+@use "pages/_menu";
+@use "pages/_pageRecruit";
+
+/*******************************
+| menu(page-menu.php)
+*******************************/

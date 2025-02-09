@@ -62,9 +62,9 @@
                 </a>
             </li>
             <li class="header__listItem">
-                <a href="<?php echo esc_url(home_url('/')); ?>#hairStyle" class="header__listLink <?php if (is_page('sell')) {
-                                                                                                        echo 'header__listLink--sell';
-                                                                                                    } ?>">
+                <a href="<?php echo esc_url(home_url('/style')); ?>" class="header__listLink <?php if (is_page('sell')) {
+                                                                                                    echo 'header__listLink--sell';
+                                                                                                } ?>">
                     STYLE
                 </a>
             </li>
@@ -76,7 +76,7 @@
                 </a>
             </li>
             <li class="header__listItem">
-                <a href="<?php echo esc_url(home_url('/')); ?>#recruit" class="header__listLink <?php if (is_page('inquiry')) {
+                <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="header__listLink <?php if (is_page('inquiry')) {
                                                                                                     echo 'header__listLink--inquiry';
                                                                                                 } ?>">
                     RECRUIT
@@ -107,9 +107,9 @@
                     </a>
                 </li>
                 <li class="header__hamburgerItem">
-                    <a href="<?php echo esc_url(home_url('/')); ?>#hairStyle" class="header__hamburgerLink <?php if (is_page('sell')) {
-                                                                                                                echo 'header__listLink--sell';
-                                                                                                            } ?>">
+                    <a href="<?php echo esc_url(home_url('/style')); ?>" class="header__hamburgerLink <?php if (is_page('sell')) {
+                                                                                                            echo 'header__listLink--sell';
+                                                                                                        } ?>">
                         STYLE
                     </a>
                 </li>
@@ -121,9 +121,9 @@
                     </a>
                 </li>
                 <li class="header__hamburgerItem">
-                    <a href="<?php echo esc_url(home_url('/')); ?>#recruit" class="header__hamburgerLink <?php if (is_page('inquiry')) {
-                                                                                                                echo 'header__listLink--inquiry';
-                                                                                                            } ?>">
+                    <a href="<?php echo esc_url(home_url('/recruit')); ?>" class="header__hamburgerLink <?php if (is_page('inquiry')) {
+                                                                                                            echo 'header__listLink--inquiry';
+                                                                                                        } ?>">
                         RECRUIT
                     </a>
                 </li>
