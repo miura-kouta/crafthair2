@@ -1,0 +1,202 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| header(header.php)
+*******************************/
+
+.header__topContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+
+  @include s.mq(tab) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: s.$colorBlack;
+  }
+}
+
+.header__socialMediaItem {
+  width: 165px;
+  margin-right: 12px;
+}
+
+.header__logoLink {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.header__socialMediaMenu {
+  display: flex;
+  margin-left: auto;
+  @include s.mq(tab) {
+    display: none;
+  }
+}
+
+.header__socialMediaItem {
+  width: 32px;
+}
+
+.header__socialMediaLink {
+  color: transparent;
+  background: linear-gradient(to right, s.$colorYellow 50%, s.$colorWhite 50%)
+    100%;
+  background-clip: text;
+  background-size: 200% 100%;
+  transition: background-position 0.3s;
+  transition: 0.3s all;
+}
+
+.header__socialMediaLink:hover {
+  filter: sepia(13) saturate(15) hue-rotate(10deg) brightness(1.2);
+}
+
+.header__listLink {
+  font-family: s.$fontFamily;
+  color: transparent;
+  background: linear-gradient(to right, s.$colorYellow 50%, s.$colorWhite 50%)
+    100%;
+  background-clip: text;
+  background-size: 200% 100%;
+  transition: background-position 0.3s;
+}
+
+.header__listLink:hover {
+  background-position: 0 100%;
+}
+
+.header-listNav {
+  @include s.mq(tab) {
+    display: none;
+  }
+}
+
+.header__listMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.header__listLink {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.header__hamburger {
+  display: none;
+}
+
+.header__hamburger {
+  display: none;
+  @include s.mq(tab) {
+    display: block;
+  }
+}
+
+.header__hamburgerNav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 99;
+  text-align: center;
+  transition: 0.5s all;
+  padding-top: 6rem;
+
+  background-color: s.$colorBlack;
+}
+
+.header__hamburgerNav.active {
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+  color: s.$colorWhite;
+}
+
+.header__hamburgerMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.header__hamburgerLink {
+  font-size: 2rem;
+  color: s.$colorWhite;
+  padding: 20px 0;
+  display: block;
+}
+
+.header__hamburgerSocialMediaMenu {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.header__hamburgerSocialMediaItem {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.header__hamburgerBox {
+  display: none;
+  position: fixed;
+  top: 24px;
+  right: max(16px, 5%);
+  z-index: 100;
+  width: 30px;
+  height: 23px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  @include s.mq(tab) {
+    display: block;
+  }
+}
+
+.header__hamburgerLine {
+  width: 30px;
+  height: 2px;
+  background-color: s.$colorWhite;
+  position: absolute;
+  transition: 0.4s ease-in-out;
+}
+
+.header__hamburgerLine:nth-child(1) {
+  top: 0px;
+}
+.header__hamburgerBox.active .header__hamburgerLine:nth-child(1) {
+  top: 8px;
+  left: 16px;
+  transform: rotate(-45deg);
+}
+
+.header__hamburgerLine:nth-child(2) {
+  top: 8px;
+}
+.header__hamburgerLine:nth-child(3) {
+  top: 16px;
+}
+
+.header__hamburgerBox.active .header__hamburgerLine:nth-child(2),
+.header__hamburgerBox.active .header__hamburgerLine:nth-child(3) {
+  top: 8px;
+  transform: rotate(45deg);
+}

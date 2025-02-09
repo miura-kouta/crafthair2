@@ -1,0 +1,54 @@
+@use "../../setting/variables" as s;
+
+/*******************************
+| recruit(recruit.php)
+*******************************/
+
+.recruit {
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(../img/recruitBackground.webp);
+  background-size: 100% 100%;
+}
+
+.recruit__headingLv2 {
+  font-size: 6.4rem;
+  font-weight: bold;
+  font-family: s.$fontFamily2;
+  line-height: 1.094;
+  letter-spacing: 0.05em;
+  color: s.$colorWhite;
+  text-align: center;
+  -webkit-text-stroke: 1px s.$colorBlack;
+}
+
+.recruit__fellowText {
+  padding-top: 20px;
+  font-size: 3.2rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: s.$colorWhite;
+  text-align: center;
+}
+
+.recruit__contactWrap {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.recruit__contactLink {
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: s.$colorWhite;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.recruit__contactLink:hover {
+  opacity: 0.7;
+}

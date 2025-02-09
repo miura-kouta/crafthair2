@@ -1,0 +1,15 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| footer(footer.php)
+*******************************/
+.footer__text {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.278;
+  letter-spacing: 0.05em;
+  color: s.$colorWhite;
+  text-align: center;
+}

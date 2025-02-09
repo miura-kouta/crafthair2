@@ -1,0 +1,327 @@
+@charset "utf-8";
+
+/* カラー============================== */
+$colorWhite: #ffffff;
+$colorBlack: #333333;
+$colorYellow: #fdfb52;
+$colorRed: #e70013;
+
+/* フォント============================== */
+$fontFamily: "Amatic SC", "Noto Sans JP", serif;
+$fontFamily2: "Kiwi Maru", "Noto Sans JP", serif;
+
+/* ブレイクポイント============================== */
+
+$breakpoints: (
+  "x-sp": "screen and (max-width: 360px)",
+  "sp": "screen and (max-width: 480px)",
+  "x-tab": "screen and (max-width: 600px)",
+  "tab": "screen and (max-width: 768px)",
+  "l-tab": "screen and (max-width: 950px)",
+  "pc": "screen and (max-width: 1025px)",
+  "l-pc": "screen and (max-width: 1280px)",
+  "xl-pc": "screen and (max-width: 1500px)",
+  "xxl-pc": "screen and (max-width: 1800px)",
+) !default;
+
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+/* フォントサイズ============================== */
+html {
+  font-size: 62.5%;
+
+  @include mq(l-pc) {
+    font-size: 52.5%;
+  }
+
+  @include mq(tab) {
+    font-size: 40%;
+  }
+}
+
+@mixin font-size100 {
+  font-size: 10rem;
+  @include mq(pc) {
+    font-size: 7rem;
+  }
+  @include mq(tab) {
+    font-size: 5.6rem;
+  }
+  @include mq(sp) {
+    font-size: 4rem;
+  }
+}
+
+@mixin font-size80 {
+  font-size: 8rem;
+  @include mq(pc) {
+    font-size: 6.4rem;
+  }
+  @include mq(tab) {
+    font-size: 5rem;
+  }
+  @include mq(sp) {
+    font-size: 3.6rem;
+  }
+}
+
+@mixin font-size64 {
+  font-size: 6.4rem;
+  @include mq(pc) {
+    font-size: 5rem;
+  }
+  @include mq(tab) {
+    font-size: 4rem;
+  }
+  @include mq(sp) {
+    font-size: 3.2rem;
+  }
+}
+
+@mixin font-size56 {
+  font-size: 5.6rem;
+  @include mq(pc) {
+    font-size: 4.4rem;
+  }
+  @include mq(tab) {
+    font-size: 3.6rem;
+  }
+  @include mq(sp) {
+    font-size: 3rem;
+  }
+}
+
+@mixin font-size46 {
+  font-size: 4.6rem;
+  @include mq(pc) {
+    font-size: 3.8rem;
+  }
+  @include mq(tab) {
+    font-size: 3.2rem;
+  }
+  @include mq(sp) {
+    font-size: 2.8rem;
+  }
+}
+
+@mixin font-size40 {
+  font-size: 4rem;
+  @include mq(pc) {
+    font-size: 3.2rem;
+  }
+  @include mq(tab) {
+    font-size: 2.8rem;
+  }
+  @include mq(sp) {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin font-size36 {
+  font-size: 3.6rem;
+  @include mq(pc) {
+    font-size: 3rem;
+  }
+  @include mq(tab) {
+    font-size: 2.8rem;
+  }
+  @include mq(sp) {
+    font-size: 2.4rem;
+  }
+}
+
+@mixin font-size32 {
+  font-size: 3.2rem;
+  @include mq(pc) {
+    font-size: 2.8rem;
+  }
+  @include mq(tab) {
+    font-size: 2.4rem;
+  }
+  @include mq(sp) {
+    font-size: 2rem;
+  }
+}
+
+@mixin font-size30 {
+  font-size: 3rem;
+  @include mq(pc) {
+    font-size: 2.6rem;
+  }
+  @include mq(tab) {
+    font-size: 2.2rem;
+  }
+  @include mq(sp) {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin font-size28 {
+  font-size: 2.8rem;
+  @include mq(pc) {
+    font-size: 2.4rem;
+  }
+  @include mq(tab) {
+    font-size: 2rem;
+  }
+  @include mq(sp) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size24 {
+  font-size: 2.4rem;
+  @include mq(pc) {
+    font-size: 2rem;
+  }
+  @include mq(tab) {
+    font-size: 1.8rem;
+  }
+  @include mq(sp) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size22 {
+  font-size: 2.2rem;
+  @include mq(pc) {
+    font-size: 1.8rem;
+  }
+  @include mq(tab) {
+    font-size: 1.6rem;
+  }
+  @include mq(sp) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size20 {
+  font-size: 2rem;
+  @include mq(pc) {
+    font-size: 1.8rem;
+  }
+  @include mq(tab) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin font-size18 {
+  font-size: 1.8rem;
+  @include mq(tab) {
+    font-size: 1.6rem;
+  }
+  @include mq(sp) {
+    font-size: 1.4rem;
+  }
+}
+
+@mixin font-size16 {
+  font-size: 1.6rem;
+  @include mq(tab) {
+    font-size: 1.4rem;
+  }
+  @include mq(sp) {
+    font-size: 1.2rem;
+  }
+}
+
+@mixin font-size12 {
+  font-size: 1.2rem;
+  @include mq(tab) {
+    font-size: 1.1rem;
+  }
+  @include mq(sp) {
+    font-size: 1rem;
+  }
+}
+
+// 画面幅ごとの表示・非表示切り替え
+// ***********************************************
+// * 360px 'x-sp'
+// ***********************************************
+.c-xSpDisplayBlock {
+  display: none;
+  @include mq(x-sp) {
+    display: block;
+  }
+}
+.c-xSpDisplayNone {
+  display: block;
+  @include mq(x-sp) {
+    display: none;
+  }
+}
+// * 480px 'sp'
+// ***********************************************
+.c-spDisplayBlock {
+  display: none;
+  @include mq(sp) {
+    display: block;
+  }
+}
+.c-spDisplayNone {
+  display: block;
+  @include mq(sp) {
+    display: none;
+  }
+}
+// * 600px 'x-tab'
+// ***********************************************
+.c-xTabDisplayBlock {
+  display: none;
+  @include mq(x-tab) {
+    display: block;
+  }
+}
+.c-xTabDisplayNone {
+  display: block;
+  @include mq(x-tab) {
+    display: none;
+  }
+}
+// * 768px 'tab'
+// ***********************************************
+.c-tabDisplayBlock {
+  display: none;
+  @include mq(tab) {
+    display: block;
+  }
+}
+.c-tabDisplayNone {
+  display: block;
+  @include mq(tab) {
+    display: none;
+  }
+}
+// * 1024px 'pc'
+// ***********************************************
+.c-pcDisplayBlock {
+  display: none;
+  @include mq(pc) {
+    display: block;
+  }
+}
+.c-pcDisplayNone {
+  display: block;
+  @include mq(pc) {
+    display: none;
+  }
+}
+// * 1025px以上 'l-pc'
+// ***********************************************
+.c-lPcDisplayBlock {
+  display: none;
+  @include mq(l-pc) {
+    display: block;
+  }
+}
+.c-lPcDisplayNone {
+  display: block;
+  @include mq(l-pc) {
+    display: none;
+  }
+}

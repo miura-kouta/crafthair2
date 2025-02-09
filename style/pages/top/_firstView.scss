@@ -1,0 +1,45 @@
+@use "../../setting/variables" as s;
+
+/*******************************
+| firstView(firstView.php)
+*******************************/
+
+.firstView {
+  content: "";
+  position: relative;
+  background-image: url(../img/firstView.webp);
+  width: 100%;
+  height: calc(100vh - 112px);
+  background-position: center;
+  background-size: cover;
+
+  @include s.mq(tab) {
+    top: 64px;
+  }
+}
+
+.firstView__text {
+  position: absolute;
+  top: 85%;
+  right: 2%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  font-size: 4rem;
+  font-family: s.$fontFamily2;
+  font-weight: normal;
+  color: s.$colorBlack;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+
+  @include s.mq(tab) {
+    top: 85%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    font-size: 4vw;
+    white-space: nowrap;
+  }
+}

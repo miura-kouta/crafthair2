@@ -1,0 +1,117 @@
+@use "../../setting/variables" as s;
+
+/*******************************
+| concept(concept.php)
+*******************************/
+
+.concept__headingWrap {
+  position: relative;
+}
+
+.concept__headingLv2 {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  display: block;
+  margin-top: 80px;
+  margin-left: 55px;
+  padding-top: 120px;
+  padding-left: 110px;
+  background-image: url(../img/titleBackGround.webp);
+  width: 460px;
+  height: 240px;
+  font-size: 6.4rem;
+  font-weight: bold;
+  font-family: s.$fontFamily;
+  color: s.$colorYellow;
+  -webkit-text-stroke: 1px s.$colorBlack;
+
+  @include s.mq(l-pc) {
+    padding-top: 128px;
+    padding-left: 120px;
+  }
+  @include s.mq(tab) {
+    left: 42%;
+    transform: translateX(-42%);
+    -webkit-transform: translateX(-42%);
+    -ms-transform: translateX(-42%);
+    width: 280px;
+    height: 136px;
+    background-size: 100%;
+    padding-top: 72px;
+    padding-left: 68px;
+  }
+}
+
+.concept__mediaWrap {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+
+  @include s.mq(tab) {
+    display: block;
+  }
+}
+
+.concept__mediaWrap:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.concept__mediaBody {
+  position: relative;
+}
+
+.concept__backgroundMediaImg {
+  @include s.mq(tab) {
+    position: absolute;
+    // top: 180%;
+    left: -2%;
+    width: 60%;
+    filter: invert(1);
+
+    top: 50px;
+  }
+}
+
+.concept__mediaText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin-left: -7%;
+  width: 60%;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.278;
+  letter-spacing: 0.05em;
+  color: s.$colorWhite;
+
+  @include s.mq(tab) {
+    top: 16vw;
+    left: 15vw;
+    width: 32%;
+    filter: invert(1);
+    transform: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    font-size: 1.8vw;
+  }
+}
+
+.concept__mediaWrap:nth-of-type(2) .concept__mediaText {
+  margin-left: 0%;
+}
+
+.concept__mediaImg {
+  width: 40%;
+
+  @include s.mq(tab) {
+    width: 100%;
+  }
+}

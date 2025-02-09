@@ -1,0 +1,54 @@
+@use "../../setting/variables" as s;
+
+/*******************************
+| hairStyle(hairStyle.php)
+*******************************/
+.hairStyle__headingLv2 {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  display: block;
+  margin-top: 80px;
+  margin-left: 55px;
+  padding-top: 120px;
+  padding-left: 110px;
+  background-image: url(../img/titleBackGround2.webp);
+  width: 460px;
+  height: 240px;
+  font-size: 6.4rem;
+  font-weight: bold;
+  font-family: s.$fontFamily;
+  color: s.$colorYellow;
+  -webkit-text-stroke: 1px s.$colorBlack;
+
+  @include s.mq(l-pc) {
+    padding-top: 124px;
+    padding-left: 112px;
+  }
+  @include s.mq(tab) {
+    left: 42%;
+    transform: translateX(-42%);
+    -webkit-transform: translateX(-42%);
+    -ms-transform: translateX(-42%);
+    width: 280px;
+    height: 136px;
+    background-size: 100%;
+    padding-top: 76px;
+    padding-left: 60px;
+  }
+}
+
+.swiper-wrapper {
+  transition-timing-function: linear;
+  align-items: end;
+  padding-top: 40px;
+}
+
+.swiper-slideLink {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,15 @@
+@use "../setting/variables" as s;
+
+html {
+  scroll-behavior: smooth;
+  background-color: s.$colorBlack;
+}
+
+body {
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}

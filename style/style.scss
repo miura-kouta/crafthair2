@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+//リセット用CSS
+@use "setting/ress";
+
+// 色などの変数読み込み
+@use "setting/variables" as s;
+
+// swiper読み込み
+@use "setting/swiper";
+
+//全体用CSS
+@use "common/common";
+
+//共通用CSS
+@use "common/utiity";
+
+// コンポーネント用CSS
+@use "components/header";
+@use "components/footer";
+
+// TOPページ用CSS
+@use "pages/top/firstView";
+@use "pages/top/concept";
+@use "pages/top/hairStyle";
+@use "pages/top/topMenu";
+@use "pages/top/staff";
+@use "pages/top/salonInfo";
+@use "pages/top/recruit";
