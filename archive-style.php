@@ -20,15 +20,14 @@
             <ul class="hairStyleCatalog__container">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                     <li class="hairStyleCatalog__card">
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="hairStyleCatalog__thumbnail">
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <?php the_post_thumbnail('medium'); ?>
-                                <?php else : ?>
-                                    <img src="https://placehold.jp/16px/999/ffffff/352x198.png?text=No%20Image" alt="noimage">
-                                <?php endif; ?>
-                            </div>
-                        </a>
+                        <div class="hairStyleCatalog__thumbnail">
+                            <?php if (has_post_thumbnail()) : ?>
+                                <?php the_post_thumbnail('medium_large'); ?>
+
+                            <?php else : ?>
+                                <img src="https://placehold.jp/16px/999/ffffff/352x198.png?text=No%20Image" alt="noimage">
+                            <?php endif; ?>
+                        </div>
                     </li>
                 <?php endwhile; ?>
             </ul>
@@ -51,6 +50,11 @@
         <?php
         wp_reset_postdata();
         ?>
+
+        <div class="modal__container">
+            <div class="modal__wrap"><img src="" class="modal__img"></div>
+        </div>
+
     </section>
 </main>
 
