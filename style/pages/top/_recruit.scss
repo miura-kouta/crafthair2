@@ -21,6 +21,10 @@
   color: s.$colorWhite;
   text-align: center;
   -webkit-text-stroke: 1px s.$colorBlack;
+
+  @include s.mq(tab) {
+    font-size: 5rem;
+  }
 }
 
 .recruit__fellowText {
@@ -31,12 +35,28 @@
   letter-spacing: 0.05em;
   color: s.$colorWhite;
   text-align: center;
+
+  @include s.mq(tab) {
+    font-size: 2rem;
+  }
+}
+
+.br__xSp {
+  display: none;
+  @include s.mq(x-sp) {
+    display: block;
+  }
 }
 
 .recruit__contactWrap {
   padding-top: 20px;
   display: flex;
   justify-content: space-around;
+
+  @include s.mq(x-sp) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .recruit__contactLink {

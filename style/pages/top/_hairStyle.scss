@@ -37,10 +37,9 @@
     width: 280px;
     height: 136px;
     background-size: 100%;
+    margin-top: 160px;
     padding-top: 76px;
     padding-left: 60px;
-
-    margin-top: 160px;
   }
 
   @include s.mq(x-tab) {

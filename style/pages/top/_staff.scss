@@ -42,6 +42,7 @@
     width: 280px;
     height: 136px;
     background-size: 100%;
+    margin-top: 5%;
     padding-top: 72px;
     padding-left: 96px;
   }
@@ -66,10 +67,6 @@
 .staff__imgContainer {
   position: relative;
   margin-top: 40px;
-
-  // @include s.mq(tab) {
-  //   position: static;
-  // }
 }
 
 .staff__imgLink {

@@ -1,8 +1,8 @@
 <section id="recruit" class="recruit">
     <div class="u-contentWidth">
         <h2 class="recruit__headingLv2">RECRUIT</h2>
-        <p class="recruit__fellowText">一緒に働いてくれる新しい仲間を募集いたします<br>
-            働きやすい環境で自分らしくキャリアを築こう！
+        <p class="recruit__fellowText">一緒に働いてくれる<br class="br__xSp">新しい仲間を募集いたします<br>
+            働きやすい環境で<br class="br__xSp">自分らしくキャリアを築こう！
         </p>
 
         <div class="recruit__contactWrap">

@@ -112,9 +112,7 @@
     padding: 15% 13% 13% 9%;
   }
   @include s.mq(x-sp) {
-    // top: 3%;
-    // left: -8%;
-    // width: 68%;
+    padding: 21% 11% 17% 10%;
   }
 }
 
@@ -138,14 +136,15 @@
     min-width: 0;
     background-size: 100% 100%;
     object-fit: cover;
-
     padding: 5% 7% 5% 7%;
   }
-  // @include s.mq(x-sp) {
-  //   bottom: -7%;
-  //   padding: 12% 12% 12% 7%;
-  //   width: 65%;
-  // }
+  @include s.mq(sp) {
+    padding: 5% 10% 5% 10%;
+  }
+  @include s.mq(x-sp) {
+    padding: 7% 10% 7% 10%;
+    width: 85%;
+  }
 }
 
 .concept__mediaImg {
@@ -158,8 +157,10 @@
 
 .concept__mediaWrap:nth-of-type(2) .concept__mediaImg {
   @include s.mq(tab) {
-    // padding-top: 300px;
-    // padding-top: 220px;
     padding-top: 40%;
+  }
+
+  @include s.mq(x-sp) {
+    padding-top: 55%;
   }
 }
