@@ -103,19 +103,18 @@
   padding: 9% 11% 8% 7%;
 
   @include s.mq(tab) {
+    background-image: url(../img/speechBubble2.webp);
     position: absolute;
-    top: 18%;
-    left: 0%;
-    z-index: 1;
-    width: 60%;
+    top: 103%;
+    left: 0;
+    width: 100%;
     min-width: 0;
-    padding: 12% 16% 11% 10%;
-    filter: invert(1);
+    padding: 15% 13% 13% 9%;
   }
   @include s.mq(x-sp) {
-    top: 3%;
-    left: -8%;
-    width: 68%;
+    // top: 3%;
+    // left: -8%;
+    // width: 68%;
   }
 }
 
@@ -129,21 +128,24 @@
 
   @include s.mq(tab) {
     position: absolute;
-    top: auto;
-    left: auto;
-    bottom: 1%;
-    right: 1%;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     z-index: 1;
-    width: 60%;
+    width: 75%;
     min-width: 0;
-    padding: 5% 10% 5% 5%;
-    filter: invert(1);
+    background-size: 100% 100%;
+    object-fit: cover;
+
+    padding: 5% 7% 5% 7%;
   }
-  @include s.mq(x-sp) {
-    bottom: -7%;
-    padding: 7% 12% 7% 7%;
-    width: 65%;
-  }
+  // @include s.mq(x-sp) {
+  //   bottom: -7%;
+  //   padding: 12% 12% 12% 7%;
+  //   width: 65%;
+  // }
 }
 
 .concept__mediaImg {
@@ -151,5 +153,13 @@
 
   @include s.mq(tab) {
     width: 100%;
+  }
+}
+
+.concept__mediaWrap:nth-of-type(2) .concept__mediaImg {
+  @include s.mq(tab) {
+    // padding-top: 300px;
+    // padding-top: 220px;
+    padding-top: 40%;
   }
 }

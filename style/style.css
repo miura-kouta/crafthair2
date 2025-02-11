@@ -1779,24 +1779,15 @@ img {
 }
 @media screen and (max-width: 768px) {
   .concept__mediaText:nth-child(1) {
+    background-image: url(../img/speechBubble2.webp);
     position: absolute;
-    top: 18%;
-    left: 0%;
-    z-index: 1;
-    width: 60%;
+    top: 103%;
+    left: 0;
+    width: 100%;
     min-width: 0;
-    padding: 12% 16% 11% 10%;
-    filter: invert(1);
+    padding: 15% 13% 13% 9%;
   }
 }
-@media screen and (max-width: 360px) {
-  .concept__mediaText:nth-child(1) {
-    top: 3%;
-    left: -8%;
-    width: 68%;
-  }
-}
-
 .concept__mediaWrap:nth-of-type(2) .concept__mediaText {
   background-image: url(../img/frame.webp);
   object-fit: cover;
@@ -1808,22 +1799,17 @@ img {
 @media screen and (max-width: 768px) {
   .concept__mediaWrap:nth-of-type(2) .concept__mediaText {
     position: absolute;
-    top: auto;
-    left: auto;
-    bottom: 1%;
-    right: 1%;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     z-index: 1;
-    width: 60%;
+    width: 75%;
     min-width: 0;
-    padding: 5% 10% 5% 5%;
-    filter: invert(1);
-  }
-}
-@media screen and (max-width: 360px) {
-  .concept__mediaWrap:nth-of-type(2) .concept__mediaText {
-    bottom: -7%;
-    padding: 7% 12% 7% 7%;
-    width: 65%;
+    background-size: 100% 100%;
+    object-fit: cover;
+    padding: 5% 7% 5% 7%;
   }
 }
 
@@ -1833,6 +1819,12 @@ img {
 @media screen and (max-width: 768px) {
   .concept__mediaImg {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .concept__mediaWrap:nth-of-type(2) .concept__mediaImg {
+    padding-top: 40%;
   }
 }
 
@@ -1878,6 +1870,7 @@ img {
     background-size: 100%;
     padding-top: 76px;
     padding-left: 60px;
+    margin-top: 160px;
   }
 }
 @media screen and (max-width: 600px) {
