@@ -32,20 +32,22 @@ navi.addEventListener("click", function () {
 });
 
 // モーダルウインドウ
-
 document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.querySelector(".modal__container"); 
-    const img = modal.querySelector("img");
+    const modal = document.querySelector(".modal__container");
 
-    document.querySelectorAll(".attachment-medium_large").forEach(function (popupImg) {
-        popupImg.addEventListener("click", function (event) {
-            event.preventDefault(); 
-            img.src = this.src;
-            modal.style.display = "block";
+    if (modal) {
+        const img = modal.querySelector("img");
+
+        document.querySelectorAll(".attachment-medium_large").forEach(function (popupImg) {
+            popupImg.addEventListener("click", function (event) {
+                event.preventDefault();
+                img.src = this.src;
+                modal.style.display = "block";
+            });
         });
-    });
 
-    modal.addEventListener("click", function () {
-        this.style.display = "none";
-    });
+        modal.addEventListener("click", function () {
+            this.style.display = "none";
+        });
+    }
 });

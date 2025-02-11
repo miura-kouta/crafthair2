@@ -45,6 +45,21 @@
     padding-top: 72px;
     padding-left: 68px;
   }
+  @include s.mq(x-tab) {
+    left: 40%;
+    padding-top: 58px;
+    padding-left: 54px;
+    width: 240px;
+    height: 110px;
+  }
+  @include s.mq(x-sp) {
+    left: 36%;
+    padding-top: 44px;
+    padding-left: 40px;
+    width: 180px;
+    height: 100px;
+    font-size: 5rem;
+  }
 }
 
 .concept__mediaWrap {
@@ -57,55 +72,78 @@
   }
 }
 
+.concept__mediaWrap:nth-of-type(1) {
+  @include s.mq(tab) {
+    position: relative;
+  }
+}
+
 .concept__mediaWrap:nth-of-type(2) {
   flex-direction: row-reverse;
-}
 
-.concept__mediaBody {
-  position: relative;
-}
-
-.concept__backgroundMediaImg {
   @include s.mq(tab) {
-    position: absolute;
-    // top: 180%;
-    left: -2%;
-    width: 60%;
-    filter: invert(1);
-
-    top: 50px;
+    position: relative;
   }
 }
 
 .concept__mediaText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  margin-left: -7%;
-  width: 60%;
   font-size: 1.8rem;
   font-family: s.$fontFamily2;
   line-height: 1.278;
   letter-spacing: 0.05em;
   color: s.$colorWhite;
+}
+
+.concept__mediaText:nth-child(1) {
+  background-image: url(../img/speechBubble.webp);
+  object-fit: cover;
+  background-size: 100% 100%;
+  width: 52%;
+  min-width: 440px;
+  padding: 9% 11% 8% 7%;
 
   @include s.mq(tab) {
-    top: 16vw;
-    left: 15vw;
-    width: 32%;
+    position: absolute;
+    top: 18%;
+    left: 0%;
+    z-index: 1;
+    width: 60%;
+    min-width: 0;
+    padding: 12% 16% 11% 10%;
     filter: invert(1);
-    transform: none;
-    -webkit-transform: none;
-    -ms-transform: none;
-    font-size: 1.8vw;
+  }
+  @include s.mq(x-sp) {
+    top: 3%;
+    left: -8%;
+    width: 68%;
   }
 }
 
 .concept__mediaWrap:nth-of-type(2) .concept__mediaText {
-  margin-left: 0%;
+  background-image: url(../img/frame.webp);
+  object-fit: cover;
+  background-size: 100% 100%;
+  width: 40%;
+  min-width: 440px;
+  padding: 10% 5% 5% 5%;
+
+  @include s.mq(tab) {
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 1%;
+    right: 1%;
+    z-index: 1;
+    width: 60%;
+    min-width: 0;
+    padding: 5% 10% 5% 5%;
+    filter: invert(1);
+  }
+  @include s.mq(x-sp) {
+    bottom: -7%;
+    padding: 7% 12% 7% 7%;
+    width: 65%;
+  }
 }
 
 .concept__mediaImg {
