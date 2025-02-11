@@ -76,9 +76,9 @@
                 </a>
             </li>
             <li class="header__listItem">
-                <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__listLink <?php if (is_page('inquiry')) {
-                                                                                                echo 'header__listLink--inquiry';
-                                                                                            } ?>">
+                <a href="<?php echo esc_url(home_url('/')); ?>staff" class="header__listLink <?php if (is_page('inquiry')) {
+                                                                                                    echo 'header__listLink--inquiry';
+                                                                                                } ?>">
                     STAFF
                 </a>
             </li>
@@ -142,9 +142,9 @@
                     </a>
                 </li>
                 <li class="header__hamburgerItem">
-                    <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__hamburgerLink <?php if (is_page('faq')) {
-                                                                                                        echo 'header__listLink--faq';
-                                                                                                    } ?>">
+                    <a href="<?php echo esc_url(home_url('/')); ?>staff" class="header__hamburgerLink <?php if (is_page('faq')) {
+                                                                                                            echo 'header__listLink--faq';
+                                                                                                        } ?>">
                         STAFF
                     </a>
                 </li>

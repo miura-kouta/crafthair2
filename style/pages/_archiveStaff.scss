@@ -1,9 +1,9 @@
 @use "../setting/variables" as s;
 
 /*******************************
-| archiveStyle(archive-style.php)
+| archiveStaff(archive-staff.php)
 *******************************/
-.archiveStyle {
+.archiveStaff {
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.archiveStyle__container {
+.archivesStaff__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 80px;
@@ -23,7 +23,7 @@
   }
 }
 
-.archiveStyle__card {
+.archivesStaff__thumbnail {
   overflow: hidden;
 
   @include s.mq(tab) {
@@ -43,13 +43,7 @@
 }
 
 .archivesStaff__details {
-  font-size: 1.6rem;
-  font-family: s.$fontFamily2;
-  color: s.$colorWhite;
-}
-
-.archivesStaff__headingLv2 {
-  font-weight: normal;
+  padding-top: 20px;
 }
 
 .pagination {

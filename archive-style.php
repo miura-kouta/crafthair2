@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-    <section id="style" class="style u-contentWidth">
+    <section id="archiveStyle" class="archiveStyle u-contentWidth">
         <h1 class="u-headingLv1">HAIR STYLE</h1>
 
         <?php
@@ -17,10 +17,10 @@
         ?>
 
         <?php if ($the_query->have_posts()) : ?>
-            <ul class="hairStyleCatalog__container">
+            <ul class="archiveStyle__container">
                 <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                    <li class="hairStyleCatalog__card">
-                        <div class="hairStyleCatalog__thumbnail">
+                    <li class="archiveStyle__card">
+                        <div class="archiveStyle__thumbnail">
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php the_post_thumbnail('medium_large'); ?>
 
