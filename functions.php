@@ -17,3 +17,11 @@ function my_enqueue_scripts()
   wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'my_enqueue_scripts');
+
+
+// Contact Form 7の自動pタグ無効
+add_filter('wpcf7_autop_or_not', 'wpcf7_autop_return_false');
+function wpcf7_autop_return_false()
+{
+  return false;
+}
