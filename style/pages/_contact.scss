@@ -5,12 +5,12 @@
 *******************************/
 .contact {
   padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .wpcf7-form {
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 20px;
   border-radius: 5px;
   width: 80%;
 }
@@ -28,7 +28,9 @@
   color: s.$colorWhite;
 }
 
-.contact__required {
+.contact__required::after {
+  content: "必須";
+  position: static;
   padding: 0 0.1em 0.1em 0.1em;
   margin-left: 8px;
   border-radius: 5px;
@@ -42,7 +44,7 @@
   width: 100%;
   border: 1px solid s.$colorWhite;
   border-radius: 5px;
-  padding: 4px 20px;
+  padding: 4px 8px;
   font-size: 1.8rem;
   font-family: s.$fontFamily2;
   line-height: 1.278;
@@ -50,7 +52,12 @@
   color: s.$colorWhite;
 }
 
-.test2 {
+textarea:focus {
+  background-color: s.$colorWhite;
+  color: s.$colorBlack;
+}
+
+.contact__submitWrap {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -62,30 +69,29 @@
   border: 1px solid s.$colorWhite;
 }
 
-.test {
+.contact__submitBox {
   position: relative;
   z-index: 1;
   transition: 0.3s ease;
   display: block;
   overflow: hidden;
+  width: 100%;
   height: 100%;
 }
 
-.test::before {
+.contact__submitBox::before {
   content: "";
   position: absolute;
-  top: 3%;
-  left: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: s.$colorYellow;
+  background-color: s.$colorWhite;
   transform-origin: 100% 50%;
   transform: scaleX(0);
   transition: transform ease 0.3s;
 }
 
-.test:hover::before {
+.contact__submitBox:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
 }
@@ -93,28 +99,48 @@
 .contact__label .wpcf7-submit {
   margin-top: 0;
   border: none;
+  height: 100%;
+  line-height: 1;
+  padding: 0;
+
+  // background-color: s.$colorBlack;
 }
 
-.test:hover .wpcf7-submit {
+.contact__submitBox:hover .wpcf7-submit {
   transition: 0.3s ease;
   color: s.$colorBlack;
 }
 
+// 確認画面
+
 #wpcf7cpcnf {
   padding-top: 40px;
-  p {
-    width: 80%;
+  table {
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
     font-size: 1.8rem;
     font-family: s.$fontFamily2;
     line-height: 1.278;
     letter-spacing: 0.05em;
     color: s.$colorWhite;
   }
+
+  th {
+    text-align: left;
+    padding-right: 20px;
+    white-space: nowrap;
+  }
+
+  tr:last-child td p {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
 }
 
 .wpcf7cp-btns {
+  display: flex;
+  justify-content: center;
 }
 
 .wpcf7cp-cfm-edit-btn {

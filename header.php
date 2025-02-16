@@ -86,7 +86,7 @@
                 <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__listLink <?php if (is_page('inquiry')) {
                                                                                                 echo 'header__listLink--inquiry';
                                                                                             } ?>">
-                    INFO
+                    SALON INFO
                 </a>
             </li>
             <li class="header__listItem">
@@ -94,6 +94,13 @@
                                                                                                     echo 'header__listLink--inquiry';
                                                                                                 } ?>">
                     RECRUIT
+                </a>
+            </li>
+            <li class="header__listItem">
+                <a href="<?php echo esc_url(home_url('/qanda')); ?>" class="header__listLink <?php if (is_page('inquiry')) {
+                                                                                                    echo 'header__listLink--inquiry';
+                                                                                                } ?>">
+                    Q&A
                 </a>
             </li>
             <li class="header__listItem">
@@ -138,7 +145,7 @@
                     <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__hamburgerLink <?php if (is_page('faq')) {
                                                                                                         echo 'header__listLink--faq';
                                                                                                     } ?>">
-                        INFO
+                        SALON INFO
                     </a>
                 </li>
                 <li class="header__hamburgerItem">
@@ -153,6 +160,13 @@
                                                                                                             echo 'header__listLink--inquiry';
                                                                                                         } ?>">
                         RECRUIT
+                    </a>
+                </li>
+                <li class="header__hamburgerItem">
+                    <a href="<?php echo esc_url(home_url('/qanda')); ?>" class="header__hamburgerLink <?php if (is_page('inquiry')) {
+                                                                                                            echo 'header__listLink--inquiry';
+                                                                                                        } ?>">
+                        Q&A
                     </a>
                 </li>
                 <li class="header__hamburgerItem">

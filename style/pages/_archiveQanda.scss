@@ -1,0 +1,110 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| archiveQanda(archive-qanda.php)
+*******************************/
+.archiveStaff {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include s.mq(tab) {
+    padding-top: 180px;
+  }
+}
+
+.archiveQanda__container {
+  padding-top: 40px;
+  font-size: 1.6rem;
+  font-family: s.$fontFamily2;
+  color: s.$colorWhite;
+}
+
+.archiveQanda__item {
+  margin-top: 20px;
+}
+
+.archiveQanda__item:first-child {
+  margin-top: 0;
+}
+
+.archiveQanda__tabTextQuestion {
+  position: relative;
+  width: 100%;
+  padding-right: 24px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  @include s.mq(tab) {
+    width: 100%;
+  }
+}
+
+.archiveQanda__tabTextQuestion::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  right: 0;
+  transition: 0.3s;
+  border-top: 2px solid s.$colorWhite;
+  width: 20px;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  justify-content: left;
+}
+
+@media (max-width: 767px) {
+  .archiveQanda__tabTextQuestion::before {
+    width: 16px;
+  }
+}
+
+.archiveQanda__tabTextQuestion::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transition: 0.3s;
+  border-left: 2px solid s.$colorWhite;
+  width: 0;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.archiveQanda__tabTextQuestion.acdn_open::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+@media (max-width: 767px) {
+  .archiveQanda__tabTextQuestion::after {
+    height: 16px;
+    right: 7px;
+  }
+}
+
+.archiveQanda__tabTextAnswer {
+  padding-right: 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  @include s.mq(tab) {
+    width: 100%;
+  }
+}
+
+.archiveQanda__tabTextAnswer.acdn_open {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
