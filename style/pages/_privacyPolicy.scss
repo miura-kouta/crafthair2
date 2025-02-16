@@ -1,0 +1,60 @@
+@use "../setting/variables" as s;
+
+/*******************************
+| privacyPolicy(page-privacyPolicy.php)
+*******************************/
+.privacyPolicy {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  @include s.mq(tab) {
+    padding-top: 180px;
+  }
+}
+
+.privacyPolicy__headingLv2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.privacyPolicy__headingLv2:first-child {
+  padding-top: 60px;
+}
+
+.privacyPolicy__wrap {
+  padding-top: 20px;
+}
+
+.privacyPolicy__text {
+  color: s.$colorWhite;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
+.privacyPolicy__text--paddingTop {
+  padding-top: 60px;
+}
+
+.privacyPolicy__menu {
+  color: s.$colorWhite;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  color: s.$colorWhite;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
+.privacyPolicy__item {
+  padding-top: 16px;
+}

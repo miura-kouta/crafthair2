@@ -133,6 +133,10 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+.header__hamburgerItem {
+  list-style: none;
+}
+
 .header__hamburgerLink {
   font-size: 2rem;
   color: s.$colorWhite;
@@ -141,18 +145,14 @@
 }
 
 .header__hamburgerSocialMediaMenu {
-  position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  padding: 20px 0;
   display: flex;
 }
 
 .header__hamburgerSocialMediaItem {
   margin-left: 8px;
   margin-right: 8px;
+  list-style: none;
 }
 
 .header__hamburgerBox {

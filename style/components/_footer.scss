@@ -3,7 +3,7 @@
 /*******************************
 | footer(footer.php)
 *******************************/
-.footer__text {
+.footer__wrap {
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 1.8rem;
@@ -11,5 +11,40 @@
   line-height: 1.278;
   letter-spacing: 0.05em;
   color: s.$colorWhite;
-  text-align: center;
+  display: flex;
+  justify-content: right;
+  @include s.mq(tab) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__link {
+  color: transparent;
+  background: linear-gradient(to right, s.$colorYellow 50%, s.$colorWhite 50%)
+    100%;
+  background-clip: text;
+  background-size: 200% 100%;
+  transition: background-position 0.3s;
+}
+
+.footer__link:hover {
+  background-position: 0 100%;
+}
+
+.footer__link::after {
+  content: "|";
+  position: static;
+  margin-left: 8px;
+  margin-right: 8px;
+  @include s.mq(tab) {
+    display: none;
+  }
+}
+
+.footer__text {
+  @include s.mq(tab) {
+    padding-top: 16px;
+  }
 }

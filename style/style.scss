@@ -19,19 +19,20 @@
 @use "components/header";
 @use "components/footer";
 
-// TOPページ用CSS
-@use "pages/top/firstView";
-@use "pages/top/concept";
-@use "pages/top/hairStyle";
-@use "pages/top/topMenu";
-@use "pages/top/staff";
-@use "pages/top/salonInfo";
-@use "pages/top/recruit";
+// topPage用CSS
+@use "pages/topPage/firstView";
+@use "pages/topPage/concept";
+@use "pages/topPage/hairStyle";
+@use "pages/topPage/topMenu";
+@use "pages/topPage/staff";
+@use "pages/topPage/salonInfo";
+@use "pages/topPage/recruit";
 
-//　各ページ用CSS
+// 各ページ用CSS
 @use "pages/_archiveStyle";
 @use "pages/_archiveStaff";
 @use "pages/_archiveQanda";
 @use "pages/_menu";
 @use "pages/_contact";
 @use "pages/_pageRecruit";
+@use "pages/_privacyPolicy";

@@ -1,4 +1,4 @@
-<section class="salonInfo u-contentWidth">
+<section id="salonInfo" class="salonInfo u-contentWidth">
     <h2 class="salonInfo__headingLv2">SALON INFO</h2>
 
     <div class="salonInfo__container">

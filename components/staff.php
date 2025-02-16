@@ -1,4 +1,4 @@
-<section class="staff ">
+<section id="staff" class="staff ">
     <h2 class="staff__headingLv2">STAFF</h2>
 
     <div class="staff__imgContainer">

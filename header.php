@@ -83,9 +83,9 @@
                 </a>
             </li>
             <li class="header__listItem">
-                <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__listLink <?php if (is_page('inquiry')) {
-                                                                                                echo 'header__listLink--inquiry';
-                                                                                            } ?>">
+                <a href="<?php echo esc_url(home_url('/')); ?>#salonInfo" class="header__listLink <?php if (is_page('inquiry')) {
+                                                                                                        echo 'header__listLink--inquiry';
+                                                                                                    } ?>">
                     SALON INFO
                 </a>
             </li>
@@ -142,9 +142,9 @@
                     </a>
                 </li>
                 <li class="header__hamburgerItem">
-                    <a href="<?php echo esc_url(home_url('/')); ?>#" class="header__hamburgerLink <?php if (is_page('faq')) {
-                                                                                                        echo 'header__listLink--faq';
-                                                                                                    } ?>">
+                    <a href="<?php echo esc_url(home_url('/')); ?>#salonInfo" class="header__hamburgerLink <?php if (is_page('faq')) {
+                                                                                                                echo 'header__listLink--faq';
+                                                                                                            } ?>">
                         SALON INFO
                     </a>
                 </li>
@@ -177,24 +177,27 @@
                     </a>
                 </li>
 
+
+                <ul class="header__hamburgerSocialMediaMenu">
+                    <li class="header__hamburgerSocialMediaItem">
+                        <a href="https://www.instagram.com/" class="header__hamburgerSocialMediaLink" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/instagram.webp" alt="instagram" width="32" height="32" decoding="async">
+                        </a>
+                    </li>
+                    <li class="header__hamburgerSocialMediaItem">
+                        <a href="https://x.com/" class="header__hamburgerSocialMediaLink" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/twitter.webp" alt="twitter" width="32" height="32" decoding="async">
+                        </a>
+                    </li>
+                    <li class="header__hamburgerSocialMediaItem">
+                        <a href="https://www.youtube.com" class="header__hamburgerSocialMediaLink" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/youtube.webp" alt="youtube" width="32" height="32" decoding="async">
+                        </a>
+                    </li>
+                </ul>
             </ul>
-            <ul class="header__hamburgerSocialMediaMenu">
-                <li class="header__hamburgerSocialMediaItem">
-                    <a href="https://www.instagram.com/" class="header__hamburgerSocialMediaLink" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/instagram.webp" alt="instagram" width="32" height="32" decoding="async">
-                    </a>
-                </li>
-                <li class="header__hamburgerSocialMediaItem">
-                    <a href="https://x.com/" class="header__hamburgerSocialMediaLink" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/twitter.webp" alt="twitter" width="32" height="32" decoding="async">
-                    </a>
-                </li>
-                <li class="header__hamburgerSocialMediaItem">
-                    <a href="https://www.youtube.com" class="header__hamburgerSocialMediaLink" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/youtube.webp" alt="youtube" width="32" height="32" decoding="async">
-                    </a>
-                </li>
-            </ul>
+
+
     </div>
     </nav>
     <button class="header__hamburgerBox">

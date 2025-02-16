@@ -282,12 +282,6 @@ video {
   text-shadow: none;
 }
 
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -1537,6 +1531,10 @@ img {
   -ms-transform: translate(-50%, -50%);
 }
 
+.header__hamburgerItem {
+  list-style: none;
+}
+
 .header__hamburgerLink {
   font-size: 2rem;
   color: #ffffff;
@@ -1545,18 +1543,14 @@ img {
 }
 
 .header__hamburgerSocialMediaMenu {
-  position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  padding: 20px 0;
   display: flex;
 }
 
 .header__hamburgerSocialMediaItem {
   margin-left: 8px;
   margin-right: 8px;
+  list-style: none;
 }
 
 .header__hamburgerBox {
@@ -1611,7 +1605,7 @@ img {
 /*******************************
 | footer(footer.php)
 *******************************/
-.footer__text {
+.footer__wrap {
   padding-top: 16px;
   padding-bottom: 16px;
   font-size: 1.8rem;
@@ -1619,7 +1613,45 @@ img {
   line-height: 1.278;
   letter-spacing: 0.05em;
   color: #ffffff;
-  text-align: center;
+  display: flex;
+  justify-content: right;
+}
+@media screen and (max-width: 767px) {
+  .footer__wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__link {
+  color: transparent;
+  background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
+  background-clip: text;
+  background-size: 200% 100%;
+  transition: background-position 0.3s;
+}
+
+.footer__link:hover {
+  background-position: 0 100%;
+}
+
+.footer__link::after {
+  content: "|";
+  position: static;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+@media screen and (max-width: 767px) {
+  .footer__link::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__text {
+    padding-top: 16px;
+  }
 }
 
 /*******************************
@@ -2058,7 +2090,7 @@ img {
   overflow: hidden;
 }
 
-.staff__headingLv1 {
+.staff__headingLv2 {
   content: "";
   position: relative;
   top: 0;
@@ -2081,13 +2113,13 @@ img {
   -webkit-text-stroke: 1px #333333;
 }
 @media screen and (max-width: 1280px) {
-  .staff__headingLv1 {
+  .staff__headingLv2 {
     padding-top: 112px;
     padding-left: 148px;
   }
 }
 @media screen and (max-width: 767px) {
-  .staff__headingLv1 {
+  .staff__headingLv2 {
     left: 45%;
     transform: translateX(-45%);
     -webkit-transform: translateX(-45%);
@@ -2101,7 +2133,7 @@ img {
   }
 }
 @media screen and (max-width: 600px) {
-  .staff__headingLv1 {
+  .staff__headingLv2 {
     left: 42%;
     padding-top: 58px;
     padding-left: 84px;
@@ -2110,7 +2142,7 @@ img {
   }
 }
 @media screen and (max-width: 360px) {
-  .staff__headingLv1 {
+  .staff__headingLv2 {
     left: 38%;
     padding-top: 44px;
     padding-left: 58px;
@@ -2716,6 +2748,7 @@ img {
 
 .archiveQanda__item {
   margin-top: 20px;
+  list-style: none;
 }
 
 .archiveQanda__item:first-child {
@@ -3126,4 +3159,64 @@ textarea:focus {
 
 .pageRecruit__contactBtn:hover .pageRecruit__contactLink {
   color: #333333;
+}
+
+/*******************************
+| privacyPolicy(page-privacyPolicy.php)
+*******************************/
+.privacyPolicy {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 767px) {
+  .privacyPolicy {
+    padding-top: 180px;
+  }
+}
+
+.privacyPolicy__headingLv2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.privacyPolicy__headingLv2:first-child {
+  padding-top: 60px;
+}
+
+.privacyPolicy__wrap {
+  padding-top: 20px;
+}
+
+.privacyPolicy__text {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Kiwi Maru", "Noto Sans JP", serif;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
+.privacyPolicy__text--paddingTop {
+  padding-top: 60px;
+}
+
+.privacyPolicy__menu {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Kiwi Maru", "Noto Sans JP", serif;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
+ol {
+  list-style-type: decimal;
+  margin-left: 1.5em;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Kiwi Maru", "Noto Sans JP", serif;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
+.privacyPolicy__item {
+  padding-top: 16px;
 }/*# sourceMappingURL=style.css.map */
