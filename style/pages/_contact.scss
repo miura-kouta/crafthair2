@@ -52,12 +52,24 @@
   color: s.$colorWhite;
 }
 
-textarea:focus {
-  background-color: s.$colorWhite;
-  color: s.$colorBlack;
+input:-internal-autofill-selected {
+  background-color: #fff !important;
 }
 
-.contact__submitWrap {
+/* 値が入力された時 */
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  background-color: #fff !important;
+  color: s.$colorBlack !important;
+}
+/* フォーカスされた時 */
+input:focus,
+textarea:focus {
+  background-color: #fff !important;
+  color: s.$colorBlack !important;
+}
+
+.contact .contact__submitWrap {
   display: flex;
   align-items: center;
   margin-top: 20px;
@@ -103,7 +115,8 @@ textarea:focus {
   line-height: 1;
   padding: 0;
 
-  // background-color: s.$colorBlack;
+  // background-color: s.$colorBlack !important;
+  // color: s.$colorWhite !important;
 }
 
 .contact__submitBox:hover .wpcf7-submit {

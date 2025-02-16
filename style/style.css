@@ -1448,25 +1448,12 @@ img {
   background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
   background-clip: text;
   background-size: 200% 100%;
-  transition: background-position 0.3s;
-  transition: 0.3s all;
+  transition: background-position 0.7s;
+  transition: 0.7s all;
 }
 
 .header__socialMediaLink:hover {
   filter: sepia(13) saturate(15) hue-rotate(10deg) brightness(1.2);
-}
-
-.header__listLink {
-  font-family: "Amatic SC", "Noto Sans JP", serif;
-  color: transparent;
-  background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
-  background-clip: text;
-  background-size: 200% 100%;
-  transition: background-position 0.3s;
-}
-
-.header__listLink:hover {
-  background-position: 0 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1482,11 +1469,25 @@ img {
   height: 48px;
 }
 
+.header__listItem {
+  list-style: none;
+}
+
 .header__listLink {
-  font-size: 20px;
+  font-family: "Amatic SC", "Noto Sans JP", serif;
+  color: transparent;
+  background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
+  background-clip: text;
+  background-size: 200% 100%;
+  font-size: 2.5rem;
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.05em;
+  transition: background-position 0.7s;
+}
+
+.header__listLink:hover {
+  background-position: 0 100%;
 }
 
 .header__hamburger {
@@ -1629,7 +1630,7 @@ img {
   background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
   background-clip: text;
   background-size: 200% 100%;
-  transition: background-position 0.3s;
+  transition: background-position 0.7s;
 }
 
 .footer__link:hover {
@@ -2960,12 +2961,25 @@ img {
   color: #ffffff;
 }
 
-textarea:focus {
-  background-color: #ffffff;
-  color: #333333;
+input:-internal-autofill-selected {
+  background-color: #fff !important;
 }
 
-.contact__submitWrap {
+/* 値が入力された時 */
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
+  background-color: #fff !important;
+  color: #333333 !important;
+}
+
+/* フォーカスされた時 */
+input:focus,
+textarea:focus {
+  background-color: #fff !important;
+  color: #333333 !important;
+}
+
+.contact .contact__submitWrap {
   display: flex;
   align-items: center;
   margin-top: 20px;
