@@ -39,11 +39,17 @@
   font-weight: normal;
   text-align: left;
   width: 100px;
+
+  @include s.mq(tab) {
+    width: 40px;
+    white-space: nowrap;
+  }
 }
 
 .pageRecruit__jobText {
   padding-left: 20px;
   text-align: left;
+  white-space: nowrap;
 }
 
 .pageRecruit__workText {
