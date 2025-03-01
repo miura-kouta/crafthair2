@@ -435,20 +435,8 @@ img {
   vertical-align: top;
 }
 
-p {
-  visibility: hidden;
-}
-
-.wf-active p {
-  visibility: visible;
-}
-
-a {
-  visibility: hidden;
-}
-
-.wf-active a {
-  visibility: visible;
+body {
+  opacity: 0;
 }
 
 /*******************************
@@ -859,7 +847,7 @@ a {
 @media screen and (max-width: 767px) {
   .firstView {
     top: 64px;
-    height: calc(100vh - 64px);
+    height: calc(100svh - 64px);
   }
 }
 
@@ -885,7 +873,7 @@ a {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    font-size: min(4vw, 16px);
+    font-size: max(4vw, 16px);
     white-space: nowrap;
   }
 }

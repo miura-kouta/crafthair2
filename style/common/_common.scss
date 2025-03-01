@@ -11,18 +11,6 @@ img {
   vertical-align: top;
 }
 
-p {
-  visibility: hidden;
-}
-
-.wf-active p {
-  visibility: visible;
-}
-
-a {
-  visibility: hidden;
-}
-
-.wf-active a {
-  visibility: visible;
+body {
+  opacity: 0;
 }

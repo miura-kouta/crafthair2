@@ -16,7 +16,7 @@
   overflow: hidden;
   @include s.mq(tab) {
     top: 64px;
-    height: calc(100vh - 64px);
+    height: calc(100svh - 64px);
   }
 }
 
@@ -41,7 +41,7 @@
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    font-size: min(4vw, 16px);
+    font-size: max(4vw, 16px);
     white-space: nowrap;
   }
 }

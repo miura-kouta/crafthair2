@@ -117,20 +117,18 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// // Webフォントのちらつきを防ぐ
-window.WebFontConfig = {
-  google: { families: ['Noto+Sans+JP', 'Amatic+SC', 'Kiwi+Maru'] },
-  active: function() {
-    sessionStorage.fonts = true;
-  }
-};
+// // Webフォントのちらつきを防ぐため
+function doSomething() {
+ document.body.style.opacity = '1';
+}
 
-(function() {
-  var wf = document.createElement('script');
-  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-  wf.type = 'text/javascript';
-  wf.async = 'true';
-  var s = document.getElementsByTagName('script')[0];
-  s.parentNode.insertBefore(wf, s);
-})();
-
+if (document.readyState === "complete") {
+  doSomething();
+} else {
+  document.addEventListener("readystatechange", function checkReady() {
+    if (document.readyState === "complete") {
+      doSomething();
+      document.removeEventListener("readystatechange", checkReady);
+    }
+  });
+}
