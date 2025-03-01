@@ -117,18 +117,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// // Webフォントのちらつきを防ぐため
+// // Webフォントのちらつきを防ぐため、ページ読込完了したらbodyタグのopacityを1に設定
 function doSomething() {
  document.body.style.opacity = '1';
 }
 
-if (document.readyState === "complete") {
-  doSomething();
-} else {
   document.addEventListener("readystatechange", function checkReady() {
     if (document.readyState === "complete") {
       doSomething();
       document.removeEventListener("readystatechange", checkReady);
     }
   });
-}

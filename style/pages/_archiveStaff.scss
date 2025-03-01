@@ -6,6 +6,10 @@
 .archiveStaff {
   padding-top: 80px;
   padding-bottom: 80px;
+  @include s.mq(tab) {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
 }
 
 .archivesStaff__container {
@@ -21,10 +25,6 @@
 
 .archivesStaff__thumbnail {
   overflow: hidden;
-
-  @include s.mq(tab) {
-    margin-top: 20px;
-  }
 }
 
 .attachment-medium_large {

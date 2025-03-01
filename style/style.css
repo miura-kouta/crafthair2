@@ -2700,7 +2700,8 @@ button.swiper-pagination-bullet {
 }
 @media screen and (max-width: 767px) {
   .archiveStyle {
-    padding-top: 180px;
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
 }
 
@@ -2718,11 +2719,6 @@ button.swiper-pagination-bullet {
 
 .archiveStyle__card {
   overflow: hidden;
-}
-@media screen and (max-width: 767px) {
-  .archiveStyle__card {
-    margin-top: 20px;
-  }
 }
 
 .attachment-medium_large {
@@ -2806,6 +2802,12 @@ button.swiper-pagination-bullet {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 767px) {
+  .archiveStaff {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+}
 
 .archivesStaff__container {
   display: grid;
@@ -2821,11 +2823,6 @@ button.swiper-pagination-bullet {
 
 .archivesStaff__thumbnail {
   overflow: hidden;
-}
-@media screen and (max-width: 767px) {
-  .archivesStaff__thumbnail {
-    margin-top: 20px;
-  }
 }
 
 .attachment-medium_large {
@@ -2902,6 +2899,12 @@ button.swiper-pagination-bullet {
 .archiveQanda {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 767px) {
+  .archiveQanda {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
 }
 
 .archiveQanda__container {
@@ -3016,6 +3019,12 @@ button.swiper-pagination-bullet {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+@media screen and (max-width: 767px) {
+  .menu {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
+}
 
 .menu__tableContainer {
   display: grid;
@@ -3084,6 +3093,12 @@ button.swiper-pagination-bullet {
 .contact {
   padding-top: 80px;
   padding-bottom: 80px;
+}
+@media screen and (max-width: 767px) {
+  .contact {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
 }
 
 .wpcf7-form {
@@ -3244,7 +3259,8 @@ textarea:-webkit-autofill {
 }
 @media screen and (max-width: 767px) {
   .pageRecruit {
-    padding-top: 180px;
+    padding-top: 120px;
+    padding-bottom: 40px;
   }
 }
 
@@ -3370,10 +3386,6 @@ textarea:-webkit-autofill {
   padding-bottom: 20px;
 }
 
-.privacyPolicy__headingLv2:first-child {
-  padding-top: 60px;
-}
-
 .privacyPolicy__wrap {
   padding-top: 20px;
 }
@@ -3387,7 +3399,7 @@ textarea:-webkit-autofill {
 }
 
 .privacyPolicy__text--paddingTop {
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 .privacyPolicy__menu {

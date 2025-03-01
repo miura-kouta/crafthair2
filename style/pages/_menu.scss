@@ -6,6 +6,10 @@
 .menu {
   padding-top: 80px;
   padding-bottom: 80px;
+  @include s.mq(tab) {
+    padding-top: 120px;
+    padding-bottom: 40px;
+  }
 }
 
 .menu__tableContainer {
