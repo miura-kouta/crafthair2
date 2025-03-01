@@ -140,11 +140,11 @@
     background-image: url(../img/speechBubble2.webp);
     width: 100%;
     min-width: 0;
-    padding: 13% 8% 10% 9%;
+    padding: 13% 12% 10% 12%;
   }
 
   @include s.mq(x-sp) {
-    padding: 21% 10% 17% 9%;
+    padding: 22% 11% 18% 10%;
   }
 }
 

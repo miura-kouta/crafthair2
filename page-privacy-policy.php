@@ -9,19 +9,19 @@
         </p>
 
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第1条（個人情報）
+            第1条<br class="u-brTab">（個人情報）
         </h2>
         <p class="privacyPolicy__text">
             「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。
         </p>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第2条（個人情報の収集方法）
+            第2条<br class="u-brTab">（個人情報の収集方法）
         </h2>
         <p class="privacyPolicy__text">
             当社は，ユーザーが利用登録をする際に氏名，生年月日，住所，電話番号，メールアドレス，銀行口座番号，クレジットカード番号，運転免許証番号などの個人情報をお尋ねすることがあります。また，ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を,当社の提携先（情報提供元，広告主，広告配信先などを含みます。以下，｢提携先｣といいます。）などから収集することがあります。
         </p>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第3条（個人情報を収集・利用する目的）
+            第3条<br class="u-brTab">（個人情報を収集・利用する目的）
         </h2>
         <p class="privacyPolicy__text">当社が個人情報を収集・利用する目的は，以下のとおりです。</p>
         <ol>
@@ -35,7 +35,7 @@
             <li class="privacyPolicy__item">上記の利用目的に付随する目的</li>
         </ol>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第4条（利用目的の変更）
+            第4条<br class="u-brTab">（利用目的の変更）
         </h2>
         <ol>
             <li class="privacyPolicy__item">
@@ -46,7 +46,7 @@
 
         </ol>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第5条（個人情報の第三者提供）
+            第5条<br class="u-brTab">（個人情報の第三者提供）
         </h2>
         <ol class="privacyPolicy__menu">
             <li class="privacyPolicy__item">
@@ -79,7 +79,7 @@
             </li>
         </ol>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第6条（個人情報の開示）
+            第6条<br class="u-brTab">（個人情報の開示）
         </h2>
         <ol class="privacyPolicy__menu">
             <li class="privacyPolicy__item">
@@ -95,7 +95,7 @@
             </li>
         </ol>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第7条（個人情報の訂正および削除）
+            第7条<br class="u-brTab">（個人情報の訂正および削除）
         </h2>
         <ol class="privacyPolicy__menu">
             <li class="privacyPolicy__item">ユーザーは，当社の保有する自己の個人情報が誤った情報である場合には，当社が定める手続きにより，当社に対して個人情報の訂正，追加または削除（以下，「訂正等」といいます。）を請求することができます。</li>
@@ -103,7 +103,7 @@
             <li class="privacyPolicy__item">当社は，前項の規定に基づき訂正等を行った場合，または訂正等を行わない旨の決定をしたときは遅滞なく，これをユーザーに通知します。</li>
         </ol>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第8条（個人情報の利用停止等）
+            第8条<br class="u-brTab">（個人情報の利用停止等）
         </h2>
         <ol class="privacyPolicy__menu">
             <li class="privacyPolicy__item">当社は，本人から，個人情報が，利用目的の範囲を超えて取り扱われているという理由，または不正の手段により取得されたものであるという理由により，その利用の停止または消去（以下，「利用停止等」といいます。）を求められた場合には，遅滞なく必要な調査を行います。</li>
@@ -112,14 +112,14 @@
             <li class="privacyPolicy__item">前2項にかかわらず，利用停止等に多額の費用を有する場合その他利用停止等を行うことが困難な場合であって，ユーザーの権利利益を保護するために必要なこれに代わるべき措置をとれる場合は，この代替策を講じるものとします。</li>
         </ol>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第9条（プライバシーポリシーの変更）
+            第9条<br class="u-brTab">（プライバシーポリシーの変更）
         </h2>
         <ol class="privacyPolicy__menu">
             <li class="privacyPolicy__item">本ポリシーの内容は，法令その他本ポリシーに別段の定めのある事項を除いて，ユーザーに通知することなく，変更することができるものとします。</li>
             <li class="privacyPolicy__item">当社が別途定める場合を除いて，変更後のプライバシーポリシーは，本ウェブサイトに掲載したときから効力を生じるものとします。</li>
         </ol>
         <h2 class="privacyPolicy__headingLv2 u-headingLv2">
-            第10条（お問い合わせ窓口）
+            第10条<br class="u-brTab">（お問い合わせ窓口）
         </h2>
         <p class="privacyPolicy__text">
             本ポリシーに関するお問い合わせは，下記の窓口までお願いいたします。<br><br>
