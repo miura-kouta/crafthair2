@@ -51,7 +51,7 @@
   font-size: 2rem;
   padding-left: 8px;
   padding-right: 8px;
-  color: s.$colorBlue;
+  color: s.$colorWhite;
   transition: 0.3s all;
 }
 
@@ -60,7 +60,7 @@
 }
 
 .current {
-  color: s.$colorWhite;
+  color: s.$colorYellow;
 }
 
 .current:hover {

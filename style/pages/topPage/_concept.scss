@@ -98,6 +98,8 @@
   justify-content: space-around;
   padding-top: 40px;
 
+  flex-direction: row-reverse;
+
   @include s.mq(tab) {
     display: block;
   }
@@ -111,8 +113,7 @@
 }
 
 .concept__mediaWrap:nth-of-type(3) {
-  flex-direction: row-reverse;
-
+  flex-direction: row;
   @include s.mq(tab) {
     position: relative;
     padding-top: 0;
@@ -137,15 +138,13 @@
 
   @include s.mq(tab) {
     background-image: url(../img/speechBubble2.webp);
-    position: absolute;
-    top: 103%;
-    left: 0;
     width: 100%;
     min-width: 0;
-    padding: 15% 13% 13% 9%;
+    padding: 13% 8% 10% 9%;
   }
+
   @include s.mq(x-sp) {
-    padding: 21% 11% 17% 10%;
+    padding: 21% 10% 17% 9%;
   }
 }
 
@@ -181,15 +180,5 @@
 
   @include s.mq(tab) {
     width: 100%;
-  }
-}
-
-.concept__mediaWrap:nth-of-type(3) .concept__mediaImg {
-  @include s.mq(tab) {
-    padding-top: 40%;
-  }
-
-  @include s.mq(x-sp) {
-    padding-top: 60%;
   }
 }

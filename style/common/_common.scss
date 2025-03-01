@@ -5,11 +5,24 @@ html {
   background-color: s.$colorBlack;
 }
 
-body {
-}
-
 img {
   width: 100%;
   height: auto;
   vertical-align: top;
+}
+
+p {
+  visibility: hidden;
+}
+
+.wf-active p {
+  visibility: visible;
+}
+
+a {
+  visibility: hidden;
+}
+
+.wf-active a {
+  visibility: visible;
 }

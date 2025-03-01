@@ -17,6 +17,7 @@
   height: 240px;
   margin-top: 80px;
 
+  white-space: nowrap;
   @include s.mq(l-pc) {
     width: 300px;
   }
@@ -24,17 +25,17 @@
   @include s.mq(tab) {
     width: 180px;
     height: 120px;
-    top: 80px;
+    top: 0;
   }
 }
 
 .hairStyle__headingLv2 {
   position: absolute;
   top: 48%;
-  left: 50%;
-  transform: translate(-50%, -48%);
-  -webkit-transform: translate(-50%, -48%);
-  -ms-transform: translate(-50%, -48%);
+  left: 55%;
+  transform: translate(-55%, -48%);
+  -webkit-transform: translate(-55%, -48%);
+  -ms-transform: translate(-55%, -48%);
   z-index: 1;
   font-size: 6.4rem;
   font-weight: bold;

@@ -6,9 +6,6 @@
 // 色などの変数読み込み
 @use "setting/variables" as s;
 
-// swiper読み込み
-@use "setting/swiper";
-
 //全体用CSS
 @use "common/common";
 
@@ -27,6 +24,9 @@
 @use "pages/topPage/staff";
 @use "pages/topPage/salonInfo";
 @use "pages/topPage/recruit";
+
+// swiper読み込み
+@use "setting/swiper";
 
 // 各ページ用CSS
 @use "pages/_archiveStyle";

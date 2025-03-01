@@ -57,20 +57,20 @@
   text-align: center;
 }
 
-.page-numbers {
+.archiveStyle .page-numbers {
   font-size: 2rem;
   padding-left: 8px;
   padding-right: 8px;
-  color: s.$colorBlue;
+  color: s.$colorWhite;
   transition: 0.3s all;
 }
 
-.page-numbers:hover {
+.archiveStyle .page-numbers:hover {
   color: s.$colorYellow;
 }
 
-.current {
-  color: s.$colorWhite;
+.archiveStyle .current {
+  color: s.$colorYellow;
 }
 
 .current:hover {

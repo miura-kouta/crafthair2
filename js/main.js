@@ -1,25 +1,6 @@
 "use strict";
 
 // swiper
-// const swiper = new Swiper(".swiper", {
-//   slidesPerView: 3,
-//   loop: true,
-
-//   autoplay: {
-//     delay: 0,
-//   },
-
-//   speed: 3000,
-
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-
-// });
-
-
-
-// swiper
 const swiper = new Swiper(".swiper", {
   slidesPerView: 3, // デフォルトは3枚表示
   loop: true,
@@ -35,8 +16,6 @@ const swiper = new Swiper(".swiper", {
   },
 
 });
-
-
 
 // ハンバーガーメニュー
 const drawerMenu = document.querySelector(".header__hamburgerBox");
@@ -129,4 +108,21 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+// // Webフォントのちらつきを防ぐ
+window.WebFontConfig = {
+  google: { families: ['Noto+Sans+JP', 'Amatic+SC', 'Kiwi+Maru'] },
+  active: function() {
+    sessionStorage.fonts = true;
+  }
+};
+
+(function() {
+  var wf = document.createElement('script');
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
 
