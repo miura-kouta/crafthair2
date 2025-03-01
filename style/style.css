@@ -1180,7 +1180,6 @@ a {
 }
 
 .swiper-wrapper {
-  transition-timing-function: linear;
   align-items: end;
   padding-top: 40px;
 }

@@ -15,6 +15,14 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 
+
+on: {
+    setTranslate: function () {
+      document.querySelector(".swiper-wrapper").style.transitionTimingFunction = "linear";
+    }
+  }
+
+
 });
 
 // ハンバーガーメニュー
