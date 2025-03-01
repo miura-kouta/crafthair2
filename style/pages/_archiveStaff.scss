@@ -6,10 +6,6 @@
 .archiveStaff {
   padding-top: 80px;
   padding-bottom: 80px;
-
-  @include s.mq(tab) {
-    padding-top: 180px;
-  }
 }
 
 .archivesStaff__container {

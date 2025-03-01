@@ -3,13 +3,9 @@
 /*******************************
 | archiveQanda(archive-qanda.php)
 *******************************/
-.archiveStaff {
+.archiveQanda {
   padding-top: 80px;
   padding-bottom: 80px;
-
-  @include s.mq(tab) {
-    padding-top: 180px;
-  }
 }
 
 .archiveQanda__container {
@@ -20,7 +16,7 @@
 }
 
 .archiveQanda__item {
-  margin-top: 20px;
+  margin-top: 40px;
   list-style: none;
 }
 
@@ -37,9 +33,15 @@
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+
+  transition: all 0.3s;
   @include s.mq(tab) {
     width: 100%;
   }
+}
+
+.archiveQanda__tabTextQuestion:hover {
+  opacity: 0.7;
 }
 
 .archiveQanda__tabTextQuestion::before {

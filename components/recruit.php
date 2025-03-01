@@ -1,4 +1,4 @@
-<section id="recruit" class="recruit">
+<section id="recruit" class="recruit fade-in fade-in-up">
     <div class="u-contentWidth">
         <h2 class="recruit__headingLv2">RECRUIT</h2>
         <p class="recruit__fellowText">一緒に働いてくれる<br class="br__xSp">新しい仲間を募集いたします<br>

@@ -3,59 +3,87 @@
 /*******************************
 | hairStyle(hairStyle.php)
 *******************************/
-.hairStyle__headingLv2 {
+.hairStyle__headingLv2Wrap {
   content: "";
   position: relative;
-  top: 0;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   display: block;
-  margin-top: 80px;
-  margin-left: 55px;
-  padding-top: 120px;
-  padding-left: 110px;
-  background-image: url(../img/titleBackGround2.webp);
-  width: 460px;
+  background-size: 100%;
+  width: 360px;
   height: 240px;
+  margin-top: 80px;
+
+  @include s.mq(l-pc) {
+    width: 300px;
+  }
+
+  @include s.mq(tab) {
+    width: 180px;
+    height: 120px;
+    top: 80px;
+  }
+}
+
+.hairStyle__headingLv2 {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -48%);
+  -webkit-transform: translate(-50%, -48%);
+  -ms-transform: translate(-50%, -48%);
+  z-index: 1;
   font-size: 6.4rem;
   font-weight: bold;
   font-family: s.$fontFamily;
   color: s.$colorYellow;
   -webkit-text-stroke: 1px s.$colorBlack;
 
-  @include s.mq(l-pc) {
-    padding-top: 124px;
-    padding-left: 112px;
-  }
   @include s.mq(tab) {
-    left: 42%;
-    transform: translateX(-42%);
-    -webkit-transform: translateX(-42%);
-    -ms-transform: translateX(-42%);
-    width: 280px;
-    height: 136px;
-    background-size: 100%;
-    margin-top: 160px;
-    padding-top: 76px;
-    padding-left: 60px;
+    font-size: 5rem;
+  }
+}
+
+.hairStyle__headingImg {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-35%, -50%);
+  -webkit-transform: translate(-35%, -50%);
+  -ms-transform: translate(-35%, -50%);
+  background-size: 100%;
+}
+
+.hairStyle__headingImg2 {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 115%;
+  transform: translate(-115%, -15%);
+  -webkit-transform: translate(-115%, -15%);
+  -ms-transform: translate(-115%, -15%);
+  background-size: 100%;
+  width: 100px;
+
+  @include s.mq(l-pc) {
+    top: -10%;
+    transform: translate(-115%, -10%);
+    -webkit-transform: translate(-115%, -10%);
+    -ms-transform: translate(-115%, -10%);
+    width: 80px;
   }
 
-  @include s.mq(x-tab) {
-    left: 40%;
-    padding-top: 58px;
-    padding-left: 54px;
-    width: 240px;
-    height: 110px;
-  }
-  @include s.mq(x-sp) {
-    left: 36%;
-    padding-top: 44px;
-    padding-left: 40px;
-    width: 180px;
-    height: 100px;
-    font-size: 5rem;
+  @include s.mq(tab) {
+    width: 60px;
+    top: -20%;
+    left: 130%;
+    transform: translate(-130%, -20%);
+    -webkit-transform: translate(-130%, -20%);
+    -ms-transform: translate(-130%, -20%);
   }
 }
 
@@ -68,4 +96,10 @@
 .swiper-slideLink {
   display: flex;
   justify-content: center;
+}
+
+.swiper-slide img {
+  @include s.mq(tab) {
+    width: 90% !important;
+  }
 }

@@ -3,60 +3,93 @@
 /*******************************
 | salonInfo(salonInfo.php)
 *******************************/
-.salonInfo__headingLv2 {
+.salonInfo {
+  overflow: hidden;
+}
+
+.salonInfo__headingLv2Wrap {
   content: "";
   position: relative;
-  top: 0;
+  top: 40px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   display: block;
-  margin-top: 80px;
-  margin-left: 40px;
-  padding-top: 108px;
-  padding-left: 80px;
-  background-image: url(../img/titleBackGround5.webp);
-  width: 460px;
+  background-size: 100%;
+  width: 360px;
   height: 240px;
+  margin-top: 80px;
+
+  @include s.mq(l-pc) {
+    width: 300px;
+  }
+
+  @include s.mq(tab) {
+    width: 180px;
+    height: 120px;
+    top: 80px;
+  }
+}
+
+.salonInfo__headingLv2 {
+  position: absolute;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%, -51%);
+  -webkit-transform: translate(-50%, -51%);
+  -ms-transform: translate(-50%, -51%);
+  z-index: 1;
   font-size: 6.4rem;
   font-weight: bold;
   font-family: s.$fontFamily;
   color: s.$colorYellow;
   -webkit-text-stroke: 1px s.$colorBlack;
 
+  white-space: nowrap;
+  @include s.mq(tab) {
+    font-size: 5rem;
+  }
+}
+
+.salonInfo__headingImg {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-size: 100%;
+}
+
+.salonInfo__headingImg2 {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 115%;
+  transform: translate(-115%, -15%);
+  -webkit-transform: translate(-115%, -15%);
+  -ms-transform: translate(-115%, -15%);
+  background-size: 100%;
+  width: 100px;
+
   @include s.mq(l-pc) {
-    padding-top: 112px;
-    padding-left: 100px;
+    top: -10%;
+    transform: translate(-115%, -10%);
+    -webkit-transform: translate(-115%, -10%);
+    -ms-transform: translate(-115%, -10%);
+    width: 80px;
   }
 
   @include s.mq(tab) {
-    left: 42%;
-    transform: translateX(-42%);
-    -webkit-transform: translateX(-42%);
-    -ms-transform: translateX(-42%);
-    width: 280px;
-    height: 136px;
-    background-size: 100%;
-    margin-top: 5%;
-    padding-top: 72px;
-    padding-left: 60px;
-  }
+    width: 60px;
 
-  @include s.mq(x-tab) {
-    left: 42%;
-    padding-top: 58px;
-    padding-left: 46px;
-    width: 240px;
-    height: 110px;
-  }
-  @include s.mq(x-sp) {
-    left: 36%;
-    padding-top: 44px;
-    padding-left: 32px;
-    width: 180px;
-    height: 100px;
-    font-size: 5rem;
+    top: -20%;
+    left: 130%;
+    transform: translate(-130%, -20%);
+    -webkit-transform: translate(-130%, -20%);
+    -ms-transform: translate(-130%, -20%);
   }
 }
 

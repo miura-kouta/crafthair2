@@ -1,8 +1,27 @@
 "use strict";
 
 // swiper
+// const swiper = new Swiper(".swiper", {
+//   slidesPerView: 3,
+//   loop: true,
+
+//   autoplay: {
+//     delay: 0,
+//   },
+
+//   speed: 3000,
+
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
+
+// });
+
+
+
+// swiper
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
+  slidesPerView: 3, // デフォルトは3枚表示
   loop: true,
 
   autoplay: {
@@ -16,6 +35,8 @@ const swiper = new Swiper(".swiper", {
   },
 
 });
+
+
 
 // ハンバーガーメニュー
 const drawerMenu = document.querySelector(".header__hamburgerBox");
@@ -94,3 +115,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+//フェードイン
+let fadeInTarget = document.querySelectorAll(".fade-in");
+window.addEventListener("scroll", () => {
+  for (let i = 0; i < fadeInTarget.length; i++) {
+    const rect = fadeInTarget[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; 
+    if (scroll > offset - windowHeight + 200) {
+      fadeInTarget[i].classList.add("scroll-in");
+    }
+  }
+});
+

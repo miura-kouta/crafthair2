@@ -56,21 +56,39 @@ input:-internal-autofill-selected {
   background-color: #fff !important;
 }
 
-/* 値が入力された時 */
 input:not(:placeholder-shown),
 textarea:not(:placeholder-shown) {
   background-color: #fff !important;
   color: s.$colorBlack !important;
 }
-/* フォーカスされた時 */
+
 input:focus,
 textarea:focus {
   background-color: #fff !important;
   color: s.$colorBlack !important;
 }
 
-.contact .contact__submitWrap {
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  box-shadow: 0 0 0 1000px s.$colorWhite inset;
+}
+
+.contact__submitWrap input,
+.contact__submitWrap textarea {
+  background-color: s.$colorBlack !important;
+  color: s.$colorWhite !important;
+  transition: all 0.3s;
+}
+
+.contact__submitWrap input:hover,
+.contact__submitWrap textarea:hover {
+  background-color: s.$colorWhite !important;
+  color: s.$colorBlack !important;
+}
+
+.contact__submitWrap .wpcf7-submit {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-left: auto;
@@ -81,47 +99,8 @@ textarea:focus {
   border: 1px solid s.$colorWhite;
 }
 
-.contact__submitBox {
-  position: relative;
-  z-index: 1;
-  transition: 0.3s ease;
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-.contact__submitBox::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: s.$colorWhite;
-  transform-origin: 100% 50%;
-  transform: scaleX(0);
-  transition: transform ease 0.3s;
-}
-
-.contact__submitBox:hover::before {
-  transform-origin: 0% 50%;
-  transform: scaleX(1);
-}
-
-.contact__label .wpcf7-submit {
-  margin-top: 0;
-  border: none;
-  height: 100%;
-  line-height: 1;
-  padding: 0;
-
-  // background-color: s.$colorBlack !important;
-  // color: s.$colorWhite !important;
-}
-
-.contact__submitBox:hover .wpcf7-submit {
-  transition: 0.3s ease;
-  color: s.$colorBlack;
+.wpcf7-spinner {
+  display: none;
 }
 
 // 確認画面
@@ -134,7 +113,7 @@ textarea:focus {
     width: 50%;
     font-size: 1.8rem;
     font-family: s.$fontFamily2;
-    line-height: 1.278;
+    line-height: 1.5;
     letter-spacing: 0.05em;
     color: s.$colorWhite;
   }
@@ -159,9 +138,25 @@ textarea:focus {
 .wpcf7cp-cfm-edit-btn {
   width: 180px;
   height: 36px;
+  background-color: s.$colorBlack;
+  color: s.$colorWhite;
+  transition: all 0.3s;
+}
+
+.wpcf7cp-cfm-edit-btn:hover {
+  background-color: s.$colorWhite;
+  color: s.$colorBlack;
 }
 
 .wpcf7cp-cfm-submit-btn {
   width: 180px;
   height: 36px;
+  background-color: s.$colorBlack;
+  color: s.$colorWhite;
+  transition: all 0.3s;
+}
+
+.wpcf7cp-cfm-submit-btn:hover {
+  background-color: s.$colorWhite;
+  color: s.$colorBlack;
 }

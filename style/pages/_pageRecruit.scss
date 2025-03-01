@@ -57,9 +57,20 @@
   letter-spacing: 0.05em;
 }
 
+.pageRecruit__workMenu {
+  text-align: center;
+  padding-top: 20px;
+  color: s.$colorWhite;
+  font-size: 1.8rem;
+  font-family: s.$fontFamily2;
+  line-height: 1.143;
+  letter-spacing: 0.05em;
+}
+
 .pageRecruit__workItem {
   padding-top: 8px;
   padding-bottom: 8px;
+  list-style: none;
 }
 
 .pageRecruit__contactBtn {

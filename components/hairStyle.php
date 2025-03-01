@@ -1,33 +1,50 @@
 <section id="hairStyle" class="hairStyle ">
-    <h2 class="hairStyle__headingLv2">HAIR STYLE</h2>
+    <div class="hairStyle__headingLv2Wrap  fade-in">
+        <h2 class="hairStyle__headingLv2">HAIR STYLE</h2>
+        <img class="hairStyle__headingImg" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundPaintBlue.webp" alt="ペンキ青の背景1" width="" height="" decoding="async">
+        <img class="hairStyle__headingImg2" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundPaintBlue2.webp" alt="ペンキ青の背景2" width="" height="" decoding="async">
+    </div>
 
-    <div class="swiper">
+
+
+    <div class="swiper fade-in fade-in-up">
         <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-                <a href="#" class="swiper-slideLink">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/hair-style.webp" alt="ヘアースタイルその１" style="width:45%; height:auto;" width="281" height="375" decoding="async">
-                </a>
-            </li>
-            <li class="swiper-slide">
-                <a href="#" class="swiper-slideLink">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/hair-style2.webp" alt="ヘアースタイルその２" style="width:80%; height:auto; " width="540" height="500" decoding="async">
-                </a>
-            </li>
-            <li class="swiper-slide">
-                <a href="#" class="swiper-slideLink">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/hair-style3.webp" alt="ヘアースタイルその３" style="width:40%; height:auto;" width="199" height="264" decoding="async">
-                </a>
-            </li>
-            <li class="swiper-slide ">
-                <a href="#" class="swiper-slideLink">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/hair-style4.webp" alt="ヘアースタイルその４" style="width:60%; height:auto;" width="327" height="455" decoding="async">
-                </a>
-            </li>
+            <?php
+            $style_query = new WP_Query([
+                'post_type' => 'style',
+                'posts_per_page' => -1,
+                'orderby' => 'date',
+                'order' => 'DESC'
+            ]);
+
+            if ($style_query->have_posts()) :
+                $count = 0;
+                while ($style_query->have_posts()) : $style_query->the_post();
+                    $page_number = ceil(++$count / 6);
+                    $page_link = $page_number > 1
+                        ? get_post_type_archive_link('style') . "page/{$page_number}/"
+                        : get_post_type_archive_link('style');
+            ?>
+                    <li class="swiper-slide">
+                        <a href="<?php echo esc_url($page_link); ?>" class="swiper-slideLink">
+                            <?php if (has_post_thumbnail()) :
+                                the_post_thumbnail('large', [
+                                    'style' => 'width:60%; height:auto;',
+                                    'decoding' => 'async'
+                                ]);
+                            endif; ?>
+                        </a>
+                    </li>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
         </ul>
         <div class="swiper-pagination"></div>
     </div>
 
-    <button class="u-btn">
+    <button class="u-btn fade-in fade-in-up">
         <a href="<?php echo esc_url(home_url('/style')); ?>" class="u-btnLink">
             <img src="<?php echo get_template_directory_uri(); ?>/img/buttonMore.webp" alt="moreボタン" width="172" height="54" decoding="async">
             <p class="u-btnText">MORE</p>

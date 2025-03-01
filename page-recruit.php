@@ -38,11 +38,10 @@
         <p class="pageRecruit__workText">お客様へのカット・カラー・パーマの施術を中心に、接客・カウンセリング・サロン業務全般を行っていただきます。</p>
 
         <h2 class="pageRecruit__headingLv2 u-headingLv2">応募方法</h2>
-        <p class="pageRecruit__workText">履歴書（写真付き）を下記のメールアドレスに送付してください。面接の日程を調整いたします。</p>
-        <p class="pageRecruit__workText"><strong>応募先:</strong> recruit@example.com</p>
-
+        <p class="pageRecruit__workText">「応募する」ボタンをクリックし、履歴書（写真付き）を添付した上でメール送付してください。面接の日程を調整いたします。</p>
+        <p class="pageRecruit__workText">応募先：recruit@example.com</p>
         <h2 class="pageRecruit__headingLv2 u-headingLv2">福利厚生</h2>
-        <ul class="pageRecruit__workMenu pageRecruit__workText">
+        <ul class="pageRecruit__workMenu ">
             <li class="pageRecruit__workItem">社会保険完備</li>
             <li class="pageRecruit__workItem">交通費支給（上限あり）</li>
             <li class="pageRecruit__workItem">研修制度あり</li>

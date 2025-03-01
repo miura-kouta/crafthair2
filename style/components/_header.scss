@@ -86,7 +86,7 @@
   font-weight: bold;
   line-height: 1;
   letter-spacing: 0.05em;
-  transition: background-position 0.7s;
+  transition: background-position 0.8s;
 }
 
 .header__listLink:hover {
@@ -126,7 +126,7 @@
 
 .header__hamburgerMenu {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);

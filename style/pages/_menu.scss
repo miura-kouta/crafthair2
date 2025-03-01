@@ -34,7 +34,7 @@
   padding-bottom: 20px;
   font-family: s.$fontFamily;
   font-weight: bold;
-  font-size: 3.2rem;
+  font-size: max(3.2rem, 30px);
   line-height: 1.188;
   letter-spacing: 0.05em;
   color: s.$colorBlack;

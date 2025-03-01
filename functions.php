@@ -25,12 +25,3 @@ function wpcf7_autop_return_false()
 {
   return false;
 }
-
-
-//css動作停止
-function my_remove_cf7_js_css()
-{
-
-  add_filter('wpcf7_load_css', '__return_false');
-}
-add_action('after_setup_theme', 'my_remove_cf7_js_css');

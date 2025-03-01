@@ -1,8 +1,12 @@
 <section id="topMenu" class="topMenu u-contentWidth">
-    <h2 class="topMenu__headingLv2">MENU</h2>
+    <div class="topMenu__headingLv2Wrap  fade-in">
+        <h2 class="topMenu__headingLv2">MENU</h2>
+        <img class="topMenu__headingImg" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundYellow.webp" alt="ペンキ黄色の背景1" width="358" height="99" decoding="async">
+        <img class="topMenu__headingImg2" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundYellow2.webp" alt="ペンキ黄色の背景2" width="108" height="158" decoding="async">
+    </div>
 
-    <div class="topMenu__tableContainer">
-        <table class="topMenu__tableInner">
+    <div class="topMenu__tableContainer ">
+        <table class="topMenu__tableInner fade-in fade-in-left">
             <thead class="topMenu__tableHead">
                 <tr class="topMenu__tableHeadRow">
                     <th class="topMenu__tableHeadCell" scope="col">CUT</th>
@@ -24,7 +28,7 @@
             </tbody>
         </table>
 
-        <table class="topMenu__tableInner">
+        <table class="topMenu__tableInner fade-in fade-in-right">
             <thead class="topMenu__tableHead">
                 <tr class="topMenu__tableHeadRow">
                     <th class="topMenu__tableHeadCell" scope="col">COLOR</th>
@@ -45,7 +49,7 @@
                 </tr>
             </tbody>
         </table>
-        <table class="topMenu__tableInner">
+        <table class="topMenu__tableInner fade-in fade-in-left">
             <thead class="topMenu__tableHead">
                 <tr class="topMenu__tableHeadRow">
                     <th class="topMenu__tableHeadCell" scope="col">PERM</th>
@@ -66,7 +70,7 @@
                 </tr>
             </tbody>
         </table>
-        <table class="topMenu__tableInner">
+        <table class="topMenu__tableInner fade-in fade-in-right">
             <thead class="topMenu__tableHead">
                 <tr class="topMenu__tableHeadRow">
                     <th class="topMenu__tableHeadCell" scope="col">OPTION</th>
@@ -88,7 +92,7 @@
             </tbody>
         </table>
     </div>
-    <button class="u-btn">
+    <button class="u-btn fade-in fade-in-up">
         <a href="<?php echo esc_url(home_url('/menu')); ?>" class="u-btnLink">
             <img src="<?php echo get_template_directory_uri(); ?>/img/buttonMore.webp" alt="moreボタン" width="172" height="54" decoding="async">
             <p class="u-btnText">MORE</p>
