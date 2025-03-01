@@ -111,6 +111,7 @@ textarea:-webkit-autofill {
 
 #wpcf7cpcnf {
   padding-top: 40px;
+
   table {
     margin-left: auto;
     margin-right: auto;
@@ -120,6 +121,9 @@ textarea:-webkit-autofill {
     line-height: 1.5;
     letter-spacing: 0.05em;
     color: s.$colorWhite;
+
+    // width: 100%;
+    // display: block;
   }
 
   th {
@@ -140,7 +144,8 @@ textarea:-webkit-autofill {
 }
 
 .wpcf7cp-cfm-edit-btn {
-  width: 180px;
+  max-width: 180px;
+  width: 100%;
   height: 36px;
   background-color: s.$colorBlack;
   color: s.$colorWhite;
@@ -153,7 +158,8 @@ textarea:-webkit-autofill {
 }
 
 .wpcf7cp-cfm-submit-btn {
-  width: 180px;
+  max-width: 180px;
+  width: 100%;
   height: 36px;
   background-color: s.$colorBlack;
   color: s.$colorWhite;
