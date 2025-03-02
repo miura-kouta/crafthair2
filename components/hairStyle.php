@@ -1,8 +1,8 @@
 <section id="hairStyle" class="hairStyle ">
     <div class="hairStyle__headingLv2Wrap  fade-in">
         <h2 class="hairStyle__headingLv2">HAIR STYLE</h2>
-        <img class="hairStyle__headingImg" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundPaintBlue.webp" alt="ペンキ青の背景1" width="" height="" decoding="async">
-        <img class="hairStyle__headingImg2" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundPaintBlue2.webp" alt="ペンキ青の背景2" width="" height="" decoding="async">
+        <img class="hairStyle__headingImg" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundBlue.webp" alt="ペンキ青の背景1" width="" height="" decoding="async">
+        <img class="hairStyle__headingImg2" src="<?php echo get_template_directory_uri(); ?>/img/titleBackGroundBlue2.webp" alt="ペンキ青の背景2" width="" height="" decoding="async">
     </div>
 
 

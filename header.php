@@ -16,6 +16,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.webp">
+    <title>男性向け美容院の架空サイト | 「CRAFT HAIR」</title>
 
     <?php wp_head(); ?>
 
