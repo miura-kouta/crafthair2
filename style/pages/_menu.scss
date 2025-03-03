@@ -14,8 +14,6 @@
 
 .menu__tableContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
   padding-top: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -23,18 +21,35 @@
   color: s.$colorWhite;
   white-space: nowrap;
 
+  gap: 80px;
+  grid-template-columns: 37% 37%;
+  place-content: center;
   @include s.mq(tab) {
     display: block;
   }
 }
 
 .menu__tableInner {
+  display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  @include s.mq(tab) {
+    width: 80%;
+    max-width: 360px;
+  }
+}
+
+.menu__tableHead {
+  display: block;
+}
+
+.menu__tableHeadRow {
+  display: block;
 }
 
 .menu__tableHeadCell {
-  padding-left: 88px;
   padding-bottom: 20px;
   font-family: s.$fontFamily;
   font-weight: bold;
@@ -46,6 +61,7 @@
     -2px 2px 0 s.$colorWhite, 2px 2px 0 s.$colorWhite;
   text-align: center;
 
+  display: block;
   @include s.mq(tab) {
     padding-top: 20px;
   }
@@ -58,16 +74,31 @@
 }
 
 .menu__tableBody {
+  display: block;
+  width: 100%;
   font-size: 2rem;
   font-family: s.$fontFamily2;
   line-height: 1.15;
   letter-spacing: 0.05em;
 }
 
+.menu__tableRow {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .menu__tableHeader {
-  width: 75%;
+  display: inline-block;
+  width: 65%;
+  margin-right: 5%;
 }
 
 .menu__tableText {
-  padding-top: 20px;
+  display: inline-block;
+  width: 30%;
+  text-align: right;
 }
