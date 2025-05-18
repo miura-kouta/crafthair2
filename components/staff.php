@@ -37,7 +37,8 @@
     </div>
 
     <button class="u-btn fade-in fade-in-up">
-        <a href="<?php echo esc_url(home_url('/')); ?>staff" class="u-btnLink u-btnLink--marginTop">
+        <!-- <a href="<?php echo esc_url(home_url('/')); ?>staff" class="u-btnLink u-btnLink--marginTop"> -->
+        <a href="<?php echo esc_url(home_url('/')); ?>staff" class="u-btnLink">
             <img src="<?php echo get_template_directory_uri(); ?>/img/buttonMore.webp" alt="moreボタン" width="172" height="54" decoding="async">
             <p class="u-btnText">MORE</p>
         </a>

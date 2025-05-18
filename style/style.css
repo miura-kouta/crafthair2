@@ -483,7 +483,7 @@ body {
   z-index: -1;
   width: 96%;
   height: 83%;
-  background-color: #fdfb52;
+  background-color: #fff44d;
   transform-origin: 100% 50%;
   transform: scaleX(0);
   transition: transform ease 0.3s;
@@ -492,25 +492,6 @@ body {
 .u-btnLink:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
-}
-
-.u-btnLink--marginTop {
-  margin-top: 120px;
-}
-@media screen and (max-width: 1280px) {
-  .u-btnLink--marginTop {
-    margin-top: 180%;
-  }
-}
-@media screen and (max-width: 950px) {
-  .u-btnLink--marginTop {
-    margin-top: 160%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .u-btnLink--marginTop {
-    margin-top: 20px;
-  }
 }
 
 .u-btnText {
@@ -630,7 +611,7 @@ body {
 
 .header__socialMediaLink {
   color: transparent;
-  background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
+  background: linear-gradient(to right, #fff44d 50%, #ffffff 50%) 100%;
   background-clip: text;
   background-size: 200% 100%;
   transition: background-position 0.7s;
@@ -661,7 +642,7 @@ body {
 .header__listLink {
   font-family: "Amatic SC", "Noto Sans JP", serif;
   color: transparent;
-  background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
+  background: linear-gradient(to right, #fff44d 50%, #ffffff 50%) 100%;
   background-clip: text;
   background-size: 200% 100%;
   font-size: 2.5rem;
@@ -812,7 +793,7 @@ body {
 
 .footer__link {
   color: transparent;
-  background: linear-gradient(to right, #fdfb52 50%, #ffffff 50%) 100%;
+  background: linear-gradient(to right, #fff44d 50%, #ffffff 50%) 100%;
   background-clip: text;
   background-size: 200% 100%;
   transition: background-position 0.7s;
@@ -932,7 +913,7 @@ body {
   font-size: 6.4rem;
   font-weight: bold;
   font-family: "Amatic SC", "Noto Sans JP", serif;
-  color: #fdfb52;
+  color: #fff44d;
   -webkit-text-stroke: 1px #333333;
 }
 @media screen and (max-width: 767px) {
@@ -1130,7 +1111,7 @@ body {
   font-size: 6.4rem;
   font-weight: bold;
   font-family: "Amatic SC", "Noto Sans JP", serif;
-  color: #fdfb52;
+  color: #fff44d;
   -webkit-text-stroke: 1px #333333;
 }
 @media screen and (max-width: 767px) {
@@ -1385,7 +1366,7 @@ body {
   font-size: 6.4rem;
   font-weight: bold;
   font-family: "Amatic SC", "Noto Sans JP", serif;
-  color: #fdfb52;
+  color: #fff44d;
   -webkit-text-stroke: 1px #333333;
 }
 @media screen and (max-width: 767px) {
@@ -1435,7 +1416,9 @@ body {
 }
 
 .staff__imgContainer {
+  display: block;
   margin-top: 40px;
+  height: 100%;
 }
 
 .staff__imgItem {
@@ -1447,10 +1430,13 @@ body {
   overflow: hidden;
   display: block;
   width: 25%;
+  height: auto;
+  margin-bottom: 8%;
 }
 @media screen and (max-width: 1280px) {
   .staff__imgLink {
     width: 35%;
+    margin-bottom: 31%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1459,6 +1445,7 @@ body {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 250%;
   }
 }
 
@@ -1499,16 +1486,16 @@ body {
 }
 @media screen and (max-width: 767px) {
   .staff__imgLink:nth-child(1) {
-    transform: rotate(0deg);
     margin-top: auto;
     left: auto;
+    right: 0;
   }
 }
 
 .staff__imgLink:nth-child(2) {
   position: absolute;
   top: 100px;
-  left: 16%;
+  left: 18%;
   transform: rotate(5deg);
 }
 @media screen and (max-width: 1280px) {
@@ -1520,10 +1507,8 @@ body {
 }
 @media screen and (max-width: 767px) {
   .staff__imgLink:nth-child(2) {
-    position: relative;
-    transform: rotate(0deg);
-    top: auto;
-    left: auto;
+    top: 90%;
+    left: 5%;
   }
 }
 
@@ -1541,9 +1526,9 @@ body {
 }
 @media screen and (max-width: 767px) {
   .staff__imgLink:nth-child(3) {
-    position: relative;
-    top: auto;
-    left: auto;
+    top: 190%;
+    left: 5%;
+    transform: rotate(-5deg);
   }
 }
 
@@ -1560,15 +1545,15 @@ body {
     left: auto;
     right: 1%;
     z-index: 3;
+    transform: rotate(-5deg);
   }
 }
 @media screen and (max-width: 767px) {
   .staff__imgLink:nth-child(4) {
-    position: relative;
-    transform: rotate(0deg);
-    top: auto;
-    left: auto;
+    top: 290%;
+    left: 5%;
     right: auto;
+    transform: rotate(5deg);
   }
 }
 
@@ -1582,14 +1567,15 @@ body {
 @media screen and (max-width: 1280px) {
   .staff__imgLink:nth-child(5) {
     z-index: 0;
+    transform: rotate(5deg);
   }
 }
 @media screen and (max-width: 767px) {
   .staff__imgLink:nth-child(5) {
-    position: relative;
-    transform: rotate(0deg);
-    top: auto;
+    top: 400%;
     right: auto;
+    left: 5%;
+    transform: rotate(-5deg);
   }
 }
 
@@ -1637,7 +1623,7 @@ body {
   font-size: 6.4rem;
   font-weight: bold;
   font-family: "Amatic SC", "Noto Sans JP", serif;
-  color: #fdfb52;
+  color: #fff44d;
   -webkit-text-stroke: 1px #333333;
   white-space: nowrap;
 }
@@ -2755,11 +2741,11 @@ button.swiper-pagination-bullet {
 }
 
 .archiveStyle .page-numbers:hover {
-  color: #fdfb52;
+  color: #fff44d;
 }
 
 .archiveStyle .current {
-  color: #fdfb52;
+  color: #fff44d;
 }
 
 .current:hover {
@@ -2853,11 +2839,11 @@ button.swiper-pagination-bullet {
 }
 
 .page-numbers:hover {
-  color: #fdfb52;
+  color: #fff44d;
 }
 
 .current {
-  color: #fdfb52;
+  color: #fff44d;
 }
 
 .current:hover {
@@ -3034,7 +3020,7 @@ button.swiper-pagination-bullet {
   color: #ffffff;
   white-space: nowrap;
   gap: 80px;
-  grid-template-columns: 37% 37%;
+  grid-template-columns: minmax(300px, 30%) minmax(300px, 30%);
   place-content: center;
 }
 @media screen and (max-width: 767px) {
@@ -3051,8 +3037,7 @@ button.swiper-pagination-bullet {
 }
 @media screen and (max-width: 767px) {
   .menu__tableInner {
-    width: 80%;
-    max-width: 360px;
+    max-width: 228px;
   }
 }
 
@@ -3227,6 +3212,12 @@ textarea:-webkit-autofill {
   display: none;
 }
 
+.error-message {
+  display: none;
+  color: #e70013;
+  font-size: 1em;
+}
+
 #wpcf7cpcnf {
   padding-top: 40px;
 }
@@ -3384,7 +3375,7 @@ textarea:-webkit-autofill {
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: #fdfb52;
+  background-color: #fff44d;
   transform-origin: 100% 50%;
   transform: scaleX(0);
   transition: transform ease 0.3s;

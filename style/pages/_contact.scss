@@ -107,6 +107,12 @@ textarea:-webkit-autofill {
   display: none;
 }
 
+.error-message {
+  display: none;
+  color: s.$colorRed;
+  font-size: 1em;
+}
+
 // 確認画面
 
 #wpcf7cpcnf {
@@ -121,9 +127,6 @@ textarea:-webkit-autofill {
     line-height: 1.5;
     letter-spacing: 0.05em;
     color: s.$colorWhite;
-
-    // width: 100%;
-    // display: block;
   }
 
   th {

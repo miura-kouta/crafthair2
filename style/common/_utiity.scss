@@ -57,20 +57,6 @@
   transform: scaleX(1);
 }
 
-.u-btnLink--marginTop {
-  margin-top: 120px;
-
-  @include s.mq(l-pc) {
-    margin-top: 180%;
-  }
-  @include s.mq(l-tab) {
-    margin-top: 160%;
-  }
-  @include s.mq(tab) {
-    margin-top: 20px;
-  }
-}
-
 .u-btnText {
   position: absolute;
   top: 45%;

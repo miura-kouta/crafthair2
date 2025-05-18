@@ -20,9 +20,9 @@
   text-align: left;
   color: s.$colorWhite;
   white-space: nowrap;
-
   gap: 80px;
-  grid-template-columns: 37% 37%;
+  grid-template-columns: minmax(300px, 30%) minmax(300px, 30%);
+
   place-content: center;
   @include s.mq(tab) {
     display: block;
@@ -36,8 +36,7 @@
   margin-right: auto;
 
   @include s.mq(tab) {
-    width: 80%;
-    max-width: 360px;
+    max-width: 228px;
   }
 }
 

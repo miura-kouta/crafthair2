@@ -15,14 +15,12 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
   },
 
-
-on: {
+  on: {
     setTranslate: function () {
-      document.querySelector(".swiper-wrapper").style.transitionTimingFunction = "linear";
-    }
-  }
-
-
+      document.querySelector(".swiper-wrapper").style.transitionTimingFunction =
+        "linear";
+    },
+  },
 });
 
 // ハンバーガーメニュー
@@ -30,45 +28,51 @@ const drawerMenu = document.querySelector(".header__hamburgerBox");
 const navi = document.querySelector(".header__hamburgerNav");
 
 drawerMenu.addEventListener("click", function () {
-	drawerMenu.classList.toggle("active");
-	navi.classList.toggle("active");
+  drawerMenu.classList.toggle("active");
+  navi.classList.toggle("active");
 });
 
 navi.addEventListener("click", function () {
-	drawerMenu.classList.toggle("active");
-	navi.classList.toggle("active");
+  drawerMenu.classList.toggle("active");
+  navi.classList.toggle("active");
 });
 
 // モーダルウインドウ
 document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.querySelector(".modal__container");
+  const modal = document.querySelector(".modal__container");
 
-    if (modal) {
-        const img = modal.querySelector("img");
+  if (modal) {
+    const img = modal.querySelector("img");
 
-        document.querySelectorAll(".attachment-medium_large").forEach(function (popupImg) {
-            popupImg.addEventListener("click", function (event) {
-                event.preventDefault();
-                img.src = this.src;
-                modal.style.display = "block";
-            });
+    document
+      .querySelectorAll(".attachment-medium_large")
+      .forEach(function (popupImg) {
+        popupImg.addEventListener("click", function (event) {
+          event.preventDefault();
+          img.src = this.src;
+          modal.style.display = "block";
         });
+      });
 
-        modal.addEventListener("click", function () {
-            this.style.display = "none";
-        });
-    }
+    modal.addEventListener("click", function () {
+      this.style.display = "none";
+    });
+  }
 });
 
 //アコーディオン
 document.addEventListener("DOMContentLoaded", function () {
-  const questionButtons = document.querySelectorAll(".archiveQanda__tabTextQuestion");
+  const questionButtons = document.querySelectorAll(
+    ".archiveQanda__tabTextQuestion"
+  );
   questionButtons.forEach((button) => {
     button.addEventListener("click", () => toggleAnswer(button));
   });
 
   const toggleAnswer = (clickedButton) => {
-    const allAnswers = document.querySelectorAll(".archiveQanda__tabTextAnswer");
+    const allAnswers = document.querySelectorAll(
+      ".archiveQanda__tabTextAnswer"
+    );
     const clickedAnswer = clickedButton.nextElementSibling;
 
     if (clickedAnswer.classList.contains("acdn_open")) {
@@ -86,7 +90,9 @@ document.addEventListener("DOMContentLoaded", function () {
       clickedAnswer.classList.remove("acdn_close");
       clickedAnswer.classList.add("acdn_open");
 
-      const allQuestions = document.querySelectorAll(".archiveQanda__tabTextQuestion");
+      const allQuestions = document.querySelectorAll(
+        ".archiveQanda__tabTextQuestion"
+      );
       allQuestions.forEach((question) => {
         question.classList.remove("acdn_open");
         question.classList.add("acdn_close");
@@ -110,7 +116,7 @@ window.addEventListener("scroll", () => {
     const rect = fadeInTarget[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
-    const windowHeight = window.innerHeight; 
+    const windowHeight = window.innerHeight;
     if (scroll > offset - windowHeight + 200) {
       fadeInTarget[i].classList.add("scroll-in");
     }
@@ -119,12 +125,73 @@ window.addEventListener("scroll", () => {
 
 // // Webフォントのちらつきを防ぐため、ページ読込完了したらbodyタグのopacityを1に設定
 function doSomething() {
- document.body.style.opacity = '1';
+  document.body.style.opacity = "1";
 }
 
-  document.addEventListener("readystatechange", function checkReady() {
-    if (document.readyState === "complete") {
-      doSomething();
-      document.removeEventListener("readystatechange", checkReady);
-    }
-  });
+document.addEventListener("readystatechange", function checkReady() {
+  if (document.readyState === "complete") {
+    doSomething();
+    document.removeEventListener("readystatechange", checkReady);
+  }
+});
+
+//Contact Form 7、バリデーション
+
+// 全角文字のみチェック（1文字でも半角が入っていたらNG）
+document.addEventListener("DOMContentLoaded", () => {
+  const inputElement = document.querySelector(".wpcf7-validates-as-required");
+  const errorMessages = document.querySelector(".error-message");
+  const outputs = document.querySelector(".wpcf7-response-output");
+  // const outputs = document.querySelector(
+  //   ".wpcf7 form.init .wpcf7-response-output"
+  // );
+  // const abc = document.querySelector(".wpcf7-response-output");
+  const element = document.querySelector(
+    ".wpcf7 form.invalid .wpcf7-response-output"
+  );
+
+  if (inputElement && errorMessages) {
+    inputElement.addEventListener("input", function () {
+      const nameValue = inputElement.value.trim();
+
+      if (nameValue === "") {
+        errorMessages.style.display = "none";
+        outputs.style.display = block;
+        return;
+      }
+
+      const isAllZenkaku = /^[^\x01-\x7E\uFF61-\uFF9F]+$/.test(nameValue);
+
+      if (!isAllZenkaku) {
+        errorMessages.style.display = "block";
+        outputs.style.display = block;
+      } else {
+        errorMessages.style.display = "none";
+      }
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const inputElement = document.querySelector(".wpcf7-validates-as-required");
+  const errorMessages = document.querySelector(".error-message");
+
+  if (inputElement && errorMessages) {
+    inputElement.addEventListener("input", function () {
+      const nameValue = inputElement.value.trim();
+
+      if (nameValue === "") {
+        errorMessages.style.display = "none";
+        return;
+      }
+
+      const isAllZenkaku = /^[^\x01-\x7E\uFF61-\uFF9F]+$/.test(nameValue);
+
+      if (!isAllZenkaku) {
+        errorMessages.style.display = "block";
+      } else {
+        errorMessages.style.display = "none";
+      }
+    });
+  }
+});
